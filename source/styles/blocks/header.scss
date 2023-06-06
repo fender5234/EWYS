@@ -42,6 +42,11 @@
 	font-family: "Lato-Regular", sans-serif;
 	text-decoration: none;
 	color: $color-white;
+
+	&:hover,
+	&:active {
+		color: rgba(255, 255, 255, 0.7);
+	}
 }
 
 .header__navbar {
@@ -63,6 +68,13 @@
 		margin: 0;
 	}
 
+	&:not(.header__navbar-link--catalog) {
+		&:hover,
+		&:active {
+			color: rgba(128, 128, 128, 0.8);
+		}
+	}
+
 	&--catalog {
 		position: relative;
 		margin: 0 20px;
@@ -70,6 +82,11 @@
 		color: $color-white;
 		background-color: $color-green;
 		border-radius: 6px;
+
+		&:hover,
+		&:active {
+			filter: drop-shadow(0 0 15px rgba(93, 218, 4, 0.2));
+		}
 
 		&:focus-visible {
 			outline: 2px solid #000000;

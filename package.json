@@ -66,5 +66,8 @@
 		"format": "prettier -u -w **/* --loglevel warn",
 		"test": "gulp --testing"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"swiper": "^9.3.2"
+	}
 }

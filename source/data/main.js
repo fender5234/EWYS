@@ -7,6 +7,6 @@ export default ({ error, pageName, status }) => ({
 		}
 	},
 	description: 'My project',
-	pixelperfect: JSON.stringify({ breakpoints: [320,1440], ext: 'webp' }),
+	pixelperfect: JSON.stringify({ breakpoints: [320, 1440], ext: 'webp' }),
 	projectName: 'My app'
 });
