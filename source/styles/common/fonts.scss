@@ -1,0 +1,33 @@
+@each $weight in 400, 700 {
+	@font-face {
+		font-weight: $weight;
+		font-style: normal;
+		font-family: "PT Sans";
+		font-display: swap;
+		src: url("../fonts/ptsans-#{$weight}.woff2") format("woff2");
+	}
+}
+
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Montserrat-Regular";
+	font-display: swap;
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Lato-Regular";
+	font-display: swap;
+	src: url("../fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-weight: 600;
+	font-style: normal;
+	font-family: "Lato-Semibold";
+	font-display: swap;
+	src: url("../fonts/Lato-Semibold.woff2") format("woff2");
+}

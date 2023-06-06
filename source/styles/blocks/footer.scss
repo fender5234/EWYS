@@ -1,0 +1,130 @@
+.footer {
+	background-color: $color-gray;
+}
+
+.footer__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer__right-part {
+	position: relative;
+	grid-column: 2/3;
+	padding: 59px 115px 0;
+}
+
+.footer__left-part {
+	display: flex;
+	grid-column: 1/2;
+	justify-content: space-between;
+	padding: 59px 186px 0 15px;
+	border-right: 1px solid rgba(173, 173, 173, 0.2);
+}
+
+.footer__social-list {
+	margin-bottom: 65px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 22px;
+	color: $color-white;
+}
+
+.footer__info-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #adadad;
+}
+
+.footer__social-link {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	padding-left: 40px;
+	text-decoration: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -4px;
+		left: 0;
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-image: url("../images/sprite.svg#phone");
+	}
+
+	&--tel {
+		&::before{
+			background-image: url("../images/sprite.svg#phone");
+		}
+	}
+
+	&--whatsApp {
+		&::before{
+			background-image: url("../images/sprite.svg#wsp");
+		}
+	}
+
+	&--telegram {
+		&::before{
+			background-image: url("../images/sprite.svg#tg");
+		}
+	}
+
+	&--email {
+		&::before{
+			background-image: url("../images/sprite.svg#mail");
+		}
+	}
+}
+
+.footer__info-link {
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: none;
+}
+
+.footer__info-title {
+	margin: 0 0 30px;
+	padding: 0;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: $color-white;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #adadad;
+}
+
+.footer__logo-link {
+	display: block;
+	margin-bottom: 45px;
+}
+
+.footer__info-list-item {
+	margin-bottom: 13px;
+}
+
+.footer__social-list-item {
+	margin-bottom: 15px;
+}
+
+.footer__anchor {
+	position: absolute;
+	right: 15px;
+	bottom: 58px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: $color-white;
+	background-image: url("../images/sprite.svg#anchor");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 22px 26px;
+	border-radius: 50%;
+	filter: drop-shadow(0 0 15px rgba(93, 218, 4, 0.5));
+}

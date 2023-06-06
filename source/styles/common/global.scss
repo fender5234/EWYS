@@ -1,0 +1,48 @@
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Lato-Regular", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	overflow-y: scroll;
+}
+
+img,
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration-skip-ink: none;
+	color: inherit;
+
+	@include interactive-transitions;
+
+	&:not([href]) {
+		pointer-events: none;
+	}
+
+	&:focus-visible {
+		border-radius: 5px;
+		outline-offset: 3px;
+	}
+}
+
+:focus-visible {
+	@include interactive-outline;
+}
+
+@supports not selector(:focus-visible) {
+	:focus {
+		@include interactive-outline;
+	}
+}

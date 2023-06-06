@@ -1,0 +1,51 @@
+@mixin graphic-icon($icon, $mask: true) {
+	$value: url("../images/sprite.svg##{$icon}") no-repeat center / 100%;
+
+	@if $mask {
+		mask: $value;
+	} @else {
+		background: $value;
+	}
+}
+
+@mixin graphic-retina($filename, $extname: "jpg") {
+	background-image: url("../img/#{$filename}.#{$extname}");
+
+	@include media-retina {
+		background-image: url("../img/#{$filename}@2x.#{$extname}");
+	}
+}
+
+@mixin graphic-adaptive($filename, $extname: "jpg") {
+	@include media-desktop {
+		@include graphic-retina("#{$filename}-desktop", $extname);
+	}
+
+	@include media-tablet {
+		@include graphic-retina("#{$filename}-tablet", $extname);
+	}
+
+	@include media-mobile {
+		@include graphic-retina("#{$filename}-mobile", $extname);
+	}
+}
+
+@mixin graphic-webp($filename, $extname: "jpg") {
+	@supports (background-image: url("../img/#{$filename}.webp")) {
+		@include graphic-retina($filename, "webp");
+	}
+
+	@supports not (background-image: url("../img/#{$filename}.webp")) {
+		@include graphic-retina($filename, $extname);
+	}
+}
+
+@mixin graphic-webp-adaptive($filename, $extname: "jpg") {
+	@supports (background-image: url("../img/#{$filename}-desktop.webp")) {
+		@include graphic-adaptive($filename, "webp");
+	}
+
+	@supports not (background-image: url("../img/#{$filename}-desktop.webp")) {
+		@include graphic-adaptive($filename, $extname);
+	}
+}
