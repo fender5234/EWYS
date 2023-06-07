@@ -11,7 +11,9 @@ const buildPages = () =>
 		.pipe(
 			through2(async (content, file) => {
 				const { code } = await renderPage(
-					path.relative(`${process.cwd()}/source/layouts/pages`, file.path).replace(/\\+/g, '/')
+					path
+						.relative(`${process.cwd()}/source/layouts/pages`, file.path)
+						.replace(/\\+/g, '/')
 				);
 
 				file.extname = '';

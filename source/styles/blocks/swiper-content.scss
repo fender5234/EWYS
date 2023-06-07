@@ -1,0 +1,159 @@
+.swiper-content {
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	&--one {
+		background-image: url("../images/banner-1.webp");
+	}
+
+	&--two {
+		background-image: url("../images/banner-2.webp");
+	}
+
+	&--tree {
+		background-image: url("../images/banner-3.webp");
+	}
+
+	&--for {
+		background-image: url("../images/banner-4.webp");
+	}
+}
+
+.swiper-content__title {
+	padding: 0;
+	font-weight: 900;
+	font-family: "Lato-Heavy", sans-serif;
+	text-transform: uppercase;
+
+	&--one {
+		margin: 0 0 26px;
+		font-size: 65px;
+		line-height: 71px;
+		color: $color-gray;
+	}
+
+	&--two {
+		margin: 0 0 30px;
+		font-size: 80px;
+		line-height: 80px;
+		text-align: center;
+		color: $color-white;
+	}
+
+	&--tree {
+		margin: 0 0 30px;
+		font-size: 80px;
+		line-height: 80px;
+		text-align: center;
+		color: $color-white;
+	}
+
+	&--for {
+		margin: 0 0 30px;
+		font-size: 80px;
+		line-height: 80px;
+		text-align: center;
+		color: $color-white;
+	}
+}
+
+.swiper-content__subtitle {
+	&--one {
+		margin: 0 0 6px;
+		padding-left: 99px;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 45px;
+		font-family: "Lato-Regular", sans-serif;
+		color: $color-white;
+	}
+
+	&--two {
+		margin: 0;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 50px;
+		font-family: "Caveat-Regular", sans-serif;
+		text-align: center;
+		color: $color-white;
+	}
+
+	&--for {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 40px;
+		font-family: "Lato-Regular", sans-serif;
+		color: $color-white;
+	}
+}
+
+.swiper-content__text-wrapper {
+	max-width: 670px;
+	margin: 0 auto;
+
+	&--one {
+		margin: 0 0 0 auto;
+		padding: 72px 15px 33px 0;
+	}
+
+	&--two {
+		padding: 130px 0 90px;
+	}
+
+	&--tree {
+		margin: 0 0 0 auto;
+		padding: 120px 15px 180px;
+	}
+
+	&--for {
+		max-width: 540px;
+		padding: 120px 15px 60px;
+	}
+}
+
+.swiper-content__subtitle-span {
+	&--one {
+		font-weight: 900;
+		font-size: 36px;
+	}
+
+	&--two {
+		color: #6a71b4;
+	}
+
+	&--tree {
+		color: #434873;
+	}
+}
+
+.swiper__content-link {
+	display: block;
+	max-width: 140px;
+	margin: 23px 272px 40px auto;
+	padding: 6px 9px 6px 7px;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	color: $color-white;
+	background-color: transparent;
+	border: 2px solid $color-white;
+	border-radius: 6px;
+
+	&--two {
+		margin: 50px auto 0;
+	}
+
+	&--for {
+		margin: 30px auto 0;
+	}
+}
+
+.swiper__content-link-note {
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: right;
+	color: $color-white;
+}

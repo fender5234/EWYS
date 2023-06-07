@@ -79,7 +79,9 @@ const buildSsrScript = () =>
 		.pipe(
 			through2(async () => {
 				global.appsConfig[appName] = (
-					await import(`../build/scripts/apps/${appName}.js?${new Date().getTime()}`)
+					await import(
+						`../build/scripts/apps/${appName}.js?${new Date().getTime()}`
+					)
 				).default;
 			})
 		);

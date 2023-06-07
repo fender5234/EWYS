@@ -24,16 +24,19 @@ const reload = (done) => {
 const watch = () => {
 	server.init({
 		async middleware({ url }, res, next) {
-			if (STATIC_FILES.some((ext) => url.includes(`.${ext}`)) && !url.includes('/api/')) {
+			if (
+				STATIC_FILES.some((ext) => url.includes(`.${ext}`)) &&
+				!url.includes('/api/')
+			) {
 				return next();
 			}
-
-			const { code, error } = await renderPage(`${url.slice(1) || 'index.html'}.twig`);
-
+			const { code, error } = await renderPage(
+				`${url.slice(1) || 'index.html'}.twig`
+			);
 			if (error) {
-				const status = StatusCode[error.includes('Unable to find') ? 'NOT_FOUND' : 'ERROR'];
+				const status =
+					StatusCode[error.includes('Unable to find') ? 'NOT_FOUND' : 'ERROR'];
 				res.writeHead(status);
-
 				try {
 					const { code: errorPageCode } = await renderPage('404.html.twig', {
 						error: error.replace(/\[\d+?m/g, ''),
@@ -44,16 +47,17 @@ const watch = () => {
 					return res.end(error);
 				}
 			}
-
 			return res.end(code);
 		},
 		reloadThrottle: 500,
 		server: ['build', 'source/static']
 	});
-
 	gulp.watch(EDITORCONFIG_FILES, lintEditorconfig);
 	gulp.watch(['*.md', '{gulp,source}/**/*.md'], lintMarkdown);
-	gulp.watch(['.eslintrc', '*.js', '{gulp,source}/**/*.{js,svelte,vue}'], lintScripts);
+	gulp.watch(
+		['.eslintrc', '*.js', '{gulp,source}/**/*.{js,svelte,vue}'],
+		lintScripts
+	);
 	gulp.watch(
 		'source/scripts/**/*.{js,svelte,vue}',
 		gulp.series(gulp.parallel(buildScripts, buildSsrScript), reload)
@@ -61,12 +65,24 @@ const watch = () => {
 	gulp.watch('source/{data,layouts}/**/*.{js,twig}', reload);
 	gulp.watch('source/place/favicons/**/*.{png,svg}', placeFavicons);
 	gulp.watch('source/place/images/**/*.{jpg,png,svg}', placeImages);
-	gulp.watch('source/place/pixelperfect/**/*.{jpg,png}', placePixelperfectImages);
+	gulp.watch(
+		'source/place/pixelperfect/**/*.{jpg,png}',
+		placePixelperfectImages
+	);
 	gulp.watch('source/place/sprite/**/*.svg', placeSpriteIcons);
 	gulp.watch('source/sprite/**/*.svg', gulp.series(buildSprite, reload));
-	gulp.watch(['source/static/**', '!source/static/images/**/*.{jpg,png}'], reload);
-	gulp.watch('source/static/images/**/*.{jpg,png}', gulp.series(buildWebp, reload));
-	gulp.watch(['.stylelintrc', 'source/styles/**/*.scss'], gulp.parallel(buildStyles, lintStyles));
+	gulp.watch(
+		['source/static/**', '!source/static/images/**/*.{jpg,png}'],
+		reload
+	);
+	gulp.watch(
+		'source/static/images/**/*.{jpg,png}',
+		gulp.series(buildWebp, reload)
+	);
+	gulp.watch(
+		['.stylelintrc', 'source/styles/**/*.scss'],
+		gulp.parallel(buildStyles, lintStyles)
+	);
 };
 
 export default watch;

@@ -162,6 +162,8 @@
 	padding-right: 3px;
 	background-color: $color-white;
 	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+	cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
@@ -175,4 +177,8 @@
 	left: 0;
 	display: flex;
 	justify-content: center;
+}
+
+.swiper__image {
+	margin: 0 auto;
 }

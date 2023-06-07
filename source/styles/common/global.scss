@@ -24,9 +24,7 @@ video {
 a {
 	text-decoration-skip-ink: none;
 	color: inherit;
-
-	@include interactive-transitions;
-
+	// @include interactive-transitions;
 	&:not([href]) {
 		pointer-events: none;
 	}

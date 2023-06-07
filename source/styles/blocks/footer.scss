@@ -56,25 +56,25 @@
 	}
 
 	&--tel {
-		&::before{
+		&::before {
 			background-image: url("../images/sprite.svg#phone");
 		}
 	}
 
 	&--whatsApp {
-		&::before{
+		&::before {
 			background-image: url("../images/sprite.svg#wsp");
 		}
 	}
 
 	&--telegram {
-		&::before{
+		&::before {
 			background-image: url("../images/sprite.svg#tg");
 		}
 	}
 
 	&--email {
-		&::before{
+		&::before {
 			background-image: url("../images/sprite.svg#mail");
 		}
 	}

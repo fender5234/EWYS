@@ -8,7 +8,12 @@ import optimizePng from 'imagemin-pngquant';
 const placePixelperfectImages = () =>
 	gulp
 		.src('source/place/pixelperfect/**/*.{jpg,png}')
-		.pipe(optimizeImages([optimizePng(), optimizeJpeg({ progressive: true, quality: 75 })]))
+		.pipe(
+			optimizeImages([
+				optimizePng(),
+				optimizeJpeg({ progressive: true, quality: 75 })
+			])
+		)
 		.pipe(clean())
 		.pipe(createWebp({ quality: 75 }))
 		.pipe(gulp.dest('source/static/pixelperfect'));

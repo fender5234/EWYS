@@ -60,13 +60,17 @@ const createData = async ({ error = '', isHtml, pageName, status = '' }) => {
 
 const getTemplate = (data) =>
 	new Promise((resolve, reject) => {
-		Twig.renderFile(`./source/layouts/pages/${data.pageName}.twig`, data, (error, code) => {
-			if (error) {
-				reject(error);
-			}
+		Twig.renderFile(
+			`./source/layouts/pages/${data.pageName}.twig`,
+			data,
+			(error, code) => {
+				if (error) {
+					reject(error);
+				}
 
-			resolve(code);
-		});
+				resolve(code);
+			}
+		);
 	});
 
 export default async (sourceName, payload = {}) => {
@@ -76,7 +80,9 @@ export default async (sourceName, payload = {}) => {
 	const isHtml = pageName.endsWith('.html');
 
 	try {
-		code = await getTemplate(await createData({ ...payload, isHtml, pageName }));
+		code = await getTemplate(
+			await createData({ ...payload, isHtml, pageName })
+		);
 
 		if (isHtml) {
 			const errors = [

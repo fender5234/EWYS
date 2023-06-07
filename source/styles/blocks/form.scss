@@ -73,8 +73,8 @@
 	border-radius: 6px;
 
 	&:hover,
-		&:active {
-			background: linear-gradient(#5dda04 70.6%, #aef26b 100%);
-			filter: drop-shadow(0 0 15px rgba(93, 218, 4, 0.5));
-		}
+	&:active {
+		background: linear-gradient(#5dda04 70.6%, #aef26b 100%);
+		filter: drop-shadow(0 0 15px rgba(93, 218, 4, 0.5));
+	}
 }

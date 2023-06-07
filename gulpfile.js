@@ -21,7 +21,12 @@ import watch from './gulp/watch.js';
 const cleanOnStart = () => deleteAsync('build');
 const cleanOnEnd = () => deleteAsync('build/scripts/apps');
 
-const lint = gulp.parallel(lintEditorconfig, lintMarkdown, lintScripts, lintStyles);
+const lint = gulp.parallel(
+	lintEditorconfig,
+	lintMarkdown,
+	lintScripts,
+	lintStyles
+);
 
 const test = gulp.series(
 	buildSsrScript,

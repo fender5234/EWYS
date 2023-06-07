@@ -15,14 +15,17 @@ export default {
 			active: true,
 			name
 		})),
-		...['cleanupNumericValues', 'convertPathData', 'convertTransform', 'cleanupListOfValues'].map(
-			(name) => ({
-				active: true,
-				name,
-				params: {
-					floatPrecision: 2
-				}
-			})
-		)
+		...[
+			'cleanupNumericValues',
+			'convertPathData',
+			'convertTransform',
+			'cleanupListOfValues'
+		].map((name) => ({
+			active: true,
+			name,
+			params: {
+				floatPrecision: 2
+			}
+		}))
 	]
 };
