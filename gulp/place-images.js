@@ -9,13 +9,7 @@ import svgoConfig from '../svgo.config.js';
 const placeImages = () =>
 	gulp
 		.src('source/place/images/**/*.{jpg,png,svg}')
-		.pipe(
-			optimizeImages([
-				optimizePng(),
-				optimizeJpeg({ progressive: true, quality: 75 }),
-				optimizeSvg(svgoConfig)
-			])
-		)
+		.pipe(optimizeImages([optimizePng(), optimizeJpeg({ progressive: true, quality: 75 }), optimizeSvg(svgoConfig)]))
 		.pipe(clean())
 		.pipe(gulp.dest('source/static/images'));
 

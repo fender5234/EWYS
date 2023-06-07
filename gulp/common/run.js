@@ -4,9 +4,7 @@ export default async (fileName, data = {}) => {
 	}
 
 	try {
-		return await (
-			await import(`../../source/${fileName}.js${data.version}`)
-		).default(data);
+		return await (await import(`../../source/${fileName}.js${data.version}`)).default(data);
 	} catch (error) {
 		if (!error.message.replace(/\\/g, '/').includes(fileName)) {
 			console.error(error.message);

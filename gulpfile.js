@@ -21,31 +21,13 @@ import watch from './gulp/watch.js';
 const cleanOnStart = () => deleteAsync('build');
 const cleanOnEnd = () => deleteAsync('build/scripts/apps');
 
-const lint = gulp.parallel(
-	lintEditorconfig,
-	lintMarkdown,
-	lintScripts,
-	lintStyles
-);
+const lint = gulp.parallel(lintEditorconfig, lintMarkdown, lintScripts, lintStyles);
 
-const test = gulp.series(
-	buildSsrScript,
-	gulp.parallel(lint, buildPages, buildScripts, buildStyles),
-	cleanOnEnd
-);
+const test = gulp.series(buildSsrScript, gulp.parallel(lint, buildPages, buildScripts, buildStyles), cleanOnEnd);
 
 const build = gulp.series(
 	cleanOnStart,
-	gulp.parallel(
-		buildScripts,
-		buildSsrScript,
-		buildStyles,
-		lint,
-		placeFavicons,
-		placeImages,
-		placePixelperfectImages,
-		placeSpriteIcons
-	),
+	gulp.parallel(buildScripts, buildSsrScript, buildStyles, lint, placeFavicons, placeImages, placePixelperfectImages, placeSpriteIcons),
 	gulp.parallel(buildSprite, buildWebp),
 	isDev ? watch : gulp.parallel(buildPages, copyStatic),
 	cleanOnEnd

@@ -78,11 +78,7 @@ const buildSsrScript = () =>
 		.pipe(gulp.dest('build/scripts/apps'))
 		.pipe(
 			through2(async () => {
-				global.appsConfig[appName] = (
-					await import(
-						`../build/scripts/apps/${appName}.js?${new Date().getTime()}`
-					)
-				).default;
+				global.appsConfig[appName] = (await import(`../build/scripts/apps/${appName}.js?${new Date().getTime()}`)).default;
 			})
 		);
 

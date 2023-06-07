@@ -22,7 +22,7 @@
 	"pluginSearchDirs": [
 		"."
 	],
-	"printWidth": 80,
+	"printWidth": 150,
 	"proseWrap": "never",
 	"singleQuote": true,
 	"trailingComma": "none",

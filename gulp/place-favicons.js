@@ -9,13 +9,7 @@ import svgoConfig from '../svgo.config.js';
 const placeFavicons = () =>
 	gulp
 		.src('source/place/favicons/**/*.{png,svg}')
-		.pipe(
-			optimizeImages([
-				optimizePng(),
-				optimizeJpeg({ progressive: true, quality: 75 }),
-				optimizeSvg(svgoConfig)
-			])
-		)
+		.pipe(optimizeImages([optimizePng(), optimizeJpeg({ progressive: true, quality: 75 }), optimizeSvg(svgoConfig)]))
 		.pipe(clean())
 		.pipe(gulp.dest('source/static'));
 
