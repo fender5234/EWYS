@@ -1,0 +1,68 @@
+.mentors {
+	background-image: url("../images/bgmain.webp");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.mentors-form__input {
+	background-color: $color-white;
+
+	&:focus-visible {
+		color: $color-gray;
+	}
+
+	&--checkbox {
+		&:checked {
+			background: none;
+			background-image: url("../images/sprite.svg#arrdark");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 17px 20px;
+		}
+
+		&:focus-visible {
+			color: $color-gray;
+		}
+	}
+}
+
+.mentors-form__span {
+	color: $color-gray;
+}
+
+.mentors-form__button {
+	&:focus-visible {
+		color: $color-gray;
+	}
+}
+
+.mentors__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 40px 0 40px 16px;
+}
+
+.mentors__wrapper-item-form {
+	grid-column: 2/3;
+	padding: 68px 0 0 5px;
+}
+
+.mentors__title {
+	margin: 0 0 30px;
+	padding: 0;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 38px;
+	color: $color-gray;
+}
+
+.mentor__text {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.mentors-form__label {
+	&--checkbox {
+		padding-top: 6px;
+	}
+}

@@ -30,6 +30,7 @@ a {
 	}
 
 	&:focus-visible {
+		color: $color-gray;
 		border-radius: 5px;
 		outline-offset: 3px;
 	}
