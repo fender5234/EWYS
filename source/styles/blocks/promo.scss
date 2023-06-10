@@ -2,6 +2,11 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	padding: 60px 0 0 15px;
+
+	@include mobile {
+		display: block;
+		padding: 0;
+	}
 }
 
 .promo__left-container {
@@ -10,6 +15,11 @@
 	grid-gap: 0 10px;
 	grid-row: 1/2;
 	grid-column: 1/2;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		padding-top: 40px;
+	}
 }
 
 .promo__right-container {
@@ -17,6 +27,12 @@
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 30px 0;
 	padding-left: 10px;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		padding: 0;
+	}
 }
 
 .promo__bottom-container {
@@ -26,6 +42,22 @@
 	grid-row: 2/3;
 	grid-column: 1/-1;
 	padding-top: 40px;
+
+	@include mobile {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0;
+		max-width: 300px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+}
+
+.promo__bottom-container > .promo__link {
+	@include mobile {
+		min-width: 130px;
+		min-height: 130px;
+		padding: 0;
+	}
 }
 
 .promo__link {
@@ -38,6 +70,13 @@
 	color: $color-white;
 	border-radius: 6px;
 
+	@include mobile {
+		min-width: 280px;
+		min-height: 302px;
+		margin: 0 auto 20px;
+		background-size: 100%;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;
@@ -46,6 +85,10 @@
 		width: 40px;
 		height: 40px;
 		background-image: url("../images/sprite.svg#arrow-card");
+
+		@include mobile {
+			left: 230px;
+		}
 	}
 
 	&--hits,
@@ -73,11 +116,25 @@
 			background-image: none;
 			mask-image: url("../images/sprite.svg#arrow-card");
 		}
+
+		@include mobile {
+			min-width: 280px;
+			min-height: 140px;
+			margin: 0 auto 20px;
+			background-size: 100%;
+		}
 	}
 
 	&--delivery {
 		background-image: url("../images/delivery.webp");
 		background-repeat: no-repeat;
+
+		@include mobile {
+			min-width: 280px;
+			min-height: 140px;
+			margin: 0 auto 20px;
+			background-size: 100%;
+		}
 	}
 
 	&--bottom {
@@ -127,8 +184,16 @@
 	display: block;
 	padding: 357px 0 0 10px;
 
+	@include mobile {
+		padding: 258px 0 0 10px;
+	}
+
 	&--right-block {
 		padding: 141px 0 0 10px;
+
+		@include mobile {
+			padding: 97px 0 0 10px;
+		}
 	}
 
 	&--right-block-color {
@@ -136,6 +201,10 @@
 	}
 
 	&--bottom {
-		padding: 9px 0 0 10px;
+		padding: 7px 0 0 7px;
+
+		@include mobile {
+			padding: 10px 0 0 10px;
+		}
 	}
 }

@@ -1,12 +1,17 @@
 .card-containter {
 	padding: 100px 0 0 30px;
+
+	@include mobile {
+		width: min-content;
+		padding: 20px 0 40px;
+	}
 }
 
 .card-header {
 	margin: 0;
 	padding: 0;
 	font-weight: 900;
-	font-size: 32px;
+	font-size: 30px;
 	line-height: 38px;
 	color: $color-gray;
 }
@@ -20,11 +25,25 @@
 	grid-template-columns: repeat(4, 1fr);
 	margin-bottom: 10px;
 	padding-top: 40px;
+
+	@include mobile {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0 20px;
+		width: min-content;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
 }
 
 .card-image {
 	position: relative;
 	border-radius: 6px;
+
+	@include mobile {
+		position: relative;
+		max-width: 130px;
+	}
 }
 
 .card-title {
@@ -53,6 +72,11 @@
 	max-width: 270px;
 	margin-bottom: 20px;
 
+	@include mobile {
+		justify-self: center;
+		max-width: 130px;
+	}
+
 	&:hover {
 		.card-buttons-list {
 			display: block;
@@ -69,12 +93,20 @@
 	justify-content: space-between;
 	align-items: baseline;
 	margin-top: auto;
+
+	@include mobile {
+		display: block;
+	}
 }
 
 .card-price-old {
 	font-size: 16px;
 	text-decoration: line-through;
 	color: rgba(51, 51, 51, 0.5);
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .card-link {
@@ -113,6 +145,11 @@
 	line-height: 14px;
 	text-align: right;
 	color: $color-white;
+
+	@include mobile {
+		top: 6px;
+		right: 6px;
+	}
 }
 
 .card-button-note {
@@ -122,6 +159,12 @@
 	border-radius: 6px;
 	cursor: pointer;
 	user-select: none;
+
+	@include mobile {
+		width: 70px;
+		padding: 3px 6px;
+		text-align: center;
+	}
 }
 
 .card-buttons-label {
@@ -142,6 +185,10 @@
 		.card-button {
 			background-color: rgba(133, 132, 132, 0.8);
 		}
+	}
+
+	@include mobile {
+		margin-bottom: 1px;
 	}
 }
 
@@ -172,7 +219,7 @@
 
 .card-grade {
 	position: absolute;
-	bottom: 104px;
+	top: 316px;
 	left: 10px;
 	display: none;
 	padding: 5px 5px 5px 26px;
@@ -184,4 +231,12 @@
 	background-repeat: no-repeat;
 	background-position: -69px 2px;
 	border-radius: 6px;
+
+	@include mobile {
+		top: 132px;
+		left: 5px;
+		width: 77px;
+		padding: 3px 10px 3px 33px;
+		background-position: -40px 2px;
+	}
 }

@@ -1,5 +1,6 @@
 .swiper-content {
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: 100%;
 
 	&--one {
@@ -17,6 +18,34 @@
 	&--for {
 		background-image: url("../images/banner-4.webp");
 	}
+
+	@include mobile {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		&--two {
+			background-image: url("../images/banner-2-mob.jpg");
+		}
+
+		&--tree {
+			background-image: url("../images/banner-3-mob.jpg");
+		}
+
+		&--for {
+			background-color: rgba(0, 0, 0, 0.4);
+			background-image: url("../images/banner-4-mob.jpg");
+		}
+	}
 }
 
 .swiper-content__title {
@@ -24,6 +53,10 @@
 	font-weight: 900;
 	font-family: "Lato-Heavy", sans-serif;
 	text-transform: uppercase;
+
+	@include mobile {
+		font-family: "Lato-Bold", sans-serif;
+	}
 
 	&--one {
 		margin: 0 0 26px;
@@ -34,8 +67,8 @@
 
 	&--two {
 		margin: 0 0 30px;
-		font-size: 80px;
-		line-height: 80px;
+		font-size: 61px;
+		line-height: 61px;
 		text-align: center;
 		color: $color-white;
 	}
@@ -46,6 +79,14 @@
 		line-height: 80px;
 		text-align: center;
 		color: $color-white;
+
+		@include mobile {
+			margin: 0 0 146px;
+			font-weight: 900;
+			font-size: 62px;
+			line-height: 53px;
+			text-align: center;
+		}
 	}
 
 	&--for {
@@ -54,10 +95,25 @@
 		line-height: 80px;
 		text-align: center;
 		color: $color-white;
+
+		@include mobile {
+			margin: 0 0 36px;
+			padding-left: 24px;
+			font-size: 41px;
+			line-height: 49px;
+			text-align: left;
+		}
 	}
 }
 
 .swiper-content__subtitle {
+	@include mobile {
+		margin: 0;
+		padding: 0;
+		font-size: 17px;
+		line-height: 26px;
+	}
+
 	&--one {
 		margin: 0 0 6px;
 		padding-left: 99px;
@@ -76,6 +132,11 @@
 		font-family: "Caveat-Regular", sans-serif;
 		text-align: center;
 		color: $color-white;
+
+		@include mobile {
+			font-size: 24px;
+			line-height: 30px;
+		}
 	}
 
 	&--for {
@@ -84,6 +145,10 @@
 		line-height: 40px;
 		font-family: "Lato-Regular", sans-serif;
 		color: $color-white;
+
+		@include mobile {
+			padding-left: 25px;
+		}
 	}
 }
 
@@ -91,27 +156,41 @@
 	max-width: 670px;
 	margin: 0 auto;
 
+	@include mobile {
+		padding: 121px 0 82px;
+		text-align: left;
+	}
+
 	&--one {
 		margin: 0 0 0 auto;
 		padding: 72px 15px 33px 0;
 	}
 
 	&--two {
-		padding: 130px 0 90px;
+		padding: 130px 0 101px;
 	}
 
 	&--tree {
 		margin: 0 0 0 auto;
-		padding: 120px 15px 180px;
+		padding: 120px 15px 153px;
 	}
 
 	&--for {
 		max-width: 540px;
-		padding: 120px 15px 60px;
+		padding: 87px 0 93px;
 	}
 }
 
 .swiper-content__subtitle-span {
+	@include mobile {
+		padding: 0;
+		text-align: center;
+
+		&--for {
+			color: #8fa9ff;
+		}
+	}
+
 	&--one {
 		font-weight: 900;
 		font-size: 36px;
@@ -123,6 +202,12 @@
 
 	&--tree {
 		color: #434873;
+
+		@include mobile {
+			font-size: 39px;
+			line-height: 50px;
+			color: #8fa9ff;
+		}
 	}
 }
 
@@ -140,8 +225,18 @@
 	border: 2px solid $color-white;
 	border-radius: 6px;
 
+	@include mobile {
+		max-width: 270px;
+		background-color: $color-green;
+		border: none;
+
+		&--for {
+			margin: 73px auto 0;
+		}
+	}
+
 	&--two {
-		margin: 50px auto 0;
+		margin: 77px auto 0;
 	}
 
 	&--for {
@@ -156,4 +251,10 @@
 	text-decoration: none;
 	text-align: right;
 	color: $color-white;
+}
+
+.swiper-content__subtitle > span {
+	@include mobile {
+		color: $color-white;
+	}
 }

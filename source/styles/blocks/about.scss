@@ -1,5 +1,9 @@
 .about__container {
 	padding: 72px 0 0 30px;
+
+	@include mobile {
+		padding: 0;
+	}
 }
 
 .about__header {
@@ -7,10 +11,19 @@
 	font-size: 32px;
 	line-height: 38px;
 	color: $color-gray;
+
+	@include mobile {
+		padding: 0 20px;
+		font-weight: 400;
+	}
 }
 
 .about__header-wrapper {
 	display: flex;
+
+	@include mobile {
+		padding: 0 20px;
+	}
 }
 
 .about__image {
@@ -26,10 +39,19 @@
 	padding: 19px 0 0;
 	list-style: none;
 	color: $color-gray;
+
+	@include mobile {
+		display: flex;
+		padding: 0;
+	}
 }
 
 .about__list-item {
 	margin-bottom: 35px;
+
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .about__header-span {
@@ -49,9 +71,13 @@
 
 .about__subtitle {
 	margin: 0;
-	padding: 0;
+	padding: 0 20px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Lato-Regular", serif;
+
+	@include mobile {
+		padding: 0 25px;
+	}
 }

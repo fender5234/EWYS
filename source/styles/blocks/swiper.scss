@@ -10,6 +10,10 @@
 	list-style: none;
 	overflow: hidden;
 	touch-action: pan-y;
+
+	@include mobile {
+		padding: 0;
+	}
 }
 
 .swiper-vertical > .swiper-wrapper {

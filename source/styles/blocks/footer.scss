@@ -6,11 +6,20 @@
 .footer__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .footer__right-part {
 	grid-column: 2/3;
 	padding: 59px 115px 0;
+
+	@include mobile {
+		padding: 20px 20px 115px;
+	}
 }
 
 .footer__left-part {
@@ -19,6 +28,11 @@
 	justify-content: space-between;
 	padding: 59px 186px 0 15px;
 	border-right: 1px solid rgba(173, 173, 173, 0.2);
+
+	@include mobile {
+		flex-direction: column;
+		padding: 20px;
+	}
 }
 
 .footer__social-list {

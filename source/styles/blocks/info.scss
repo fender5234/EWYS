@@ -9,6 +9,10 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 103px 0 92px 14px;
+
+	@include mobile {
+		display: block;
+	}
 }
 
 .info__title {

@@ -2,6 +2,11 @@
 	background-image: url("../images/bgmain.webp");
 	background-repeat: no-repeat;
 	background-size: 100%;
+
+	@include mobile {
+		background-image: url("../images/mentors-mini.webp");
+		background-size: cover;
+	}
 }
 
 .mentors-form__input {
@@ -40,11 +45,21 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	padding: 40px 0 40px 16px;
+
+	@include mobile {
+		display: flex;
+    flex-direction: column;
+    padding: 20px 20px 100px;
+	}
 }
 
 .mentors__wrapper-item-form {
 	grid-column: 2/3;
 	padding: 68px 0 0 5px;
+
+	@include mobile {
+		padding: 20px 0 0;
+	}
 }
 
 .mentors__title {
@@ -54,6 +69,10 @@
 	font-size: 32px;
 	line-height: 38px;
 	color: $color-gray;
+
+	@include mobile {
+		margin: 0 0 21px;
+	}
 }
 
 .mentor__text {
