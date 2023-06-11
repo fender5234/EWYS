@@ -33,15 +33,14 @@ new Swiper('.quickwiev__swiper', {
 	}
 });
 
-
-const mqs = window.matchMedia("(max-width:600px)");
+const mqs = window.matchMedia('(max-width:600px)');
 mqs.addEventListener('change', () => {
 	if (mqs.matches) {
 		swiperMainWrapper.classList.add('swiper');
 		aboutWrapper.classList.add('swiper-wrapper');
-		aboutListItem.forEach(item => item.classList.add('swiper-slide'));
+		aboutListItem.forEach((item) => item.classList.add('swiper-slide'));
 
-		new Swiper(swiperMainWrapper , {
+		new Swiper(swiperMainWrapper, {
 			loop: true,
 			modules: [Navigation, Pagination],
 
@@ -53,12 +52,11 @@ mqs.addEventListener('change', () => {
 			pagination: {
 				clickable: true,
 				el: '.swiper-pagination'
-			},
+			}
 		});
 	} else {
 		swiperMainWrapper.classList.remove('swiper');
 		aboutWrapper.classList.remove('swiper-wrapper');
-		aboutListItem.forEach(item => item.classList.remove('swiper-slide'));
+		aboutListItem.forEach((item) => item.classList.remove('swiper-slide'));
 	}
-}
-);
+});
