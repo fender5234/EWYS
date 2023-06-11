@@ -18,6 +18,10 @@
 
 .card-span {
 	color: $color-green;
+
+	@include mobile {
+		font-weight: 900;
+	}
 }
 
 .card-wrapper {
@@ -52,10 +56,21 @@
 	font-size: 16px;
 	line-height: 22px;
 	color: $color-gray;
+
+	@include mobile {
+		padding: 12px 0 4px;
+		font-size: 14px;
+		line-height: 16px;
+	}
 }
 
 .card-articul {
 	color: rgba(51, 51, 51, 0.2);
+
+	@include mobile {
+		font-size: 12px;
+		line-height: 14px;
+	}
 }
 
 .card-price {
@@ -63,6 +78,11 @@
 	font-size: 24px;
 	font-family: "Montserrat-SemiBold", serif;
 	color: $color-gray;
+
+	@include mobile {
+		align-self: flex-end;
+		padding-top: 5px;
+	}
 }
 
 .card-item {
@@ -75,6 +95,7 @@
 	@include mobile {
 		justify-self: center;
 		max-width: 130px;
+		margin-bottom: 23px;
 	}
 
 	&:hover {
@@ -86,6 +107,12 @@
 			display: block;
 		}
 	}
+
+	&--mobile-hidden {
+		@include mobile {
+			display: none;
+		}
+	}
 }
 
 .card-note {
@@ -95,7 +122,8 @@
 	margin-top: auto;
 
 	@include mobile {
-		display: block;
+		flex-direction: column;
+		margin: 0;
 	}
 }
 
@@ -105,6 +133,7 @@
 	color: rgba(51, 51, 51, 0.5);
 
 	@include mobile {
+		margin-right: 3px;
 		font-size: 14px;
 	}
 }
@@ -130,6 +159,14 @@
 		height: 20px;
 		background-color: $color-gray;
 		mask-image: url("../images/sprite.svg#arrow-card");
+
+		@include mobile {
+			right: 0;
+		}
+	}
+
+	@include mobile {
+		padding: 0;
 	}
 }
 

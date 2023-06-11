@@ -181,6 +181,10 @@
 	left: 0;
 	display: flex;
 	justify-content: center;
+
+	@include mobile {
+		bottom: 20px;
+	}
 }
 
 .swiper__image {

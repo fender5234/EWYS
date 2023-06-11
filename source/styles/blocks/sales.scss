@@ -5,4 +5,10 @@
 	font-size: 30px;
 	line-height: 38px;
 	color: $color-gray;
+
+	@include mobile {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 38px;
+	}
 }

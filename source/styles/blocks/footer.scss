@@ -112,6 +112,12 @@
 .copyright {
 	font-size: 12px;
 	color: #adadad;
+
+	@include mobile {
+		position: absolute;
+		top: 920px;
+		left: 20px;
+	}
 }
 
 .footer__logo-link {

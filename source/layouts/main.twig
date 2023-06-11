@@ -6,10 +6,6 @@
 		<title>{{ projectName }}</title>
 		<meta name="description" content="{{ description }}">
 		<link rel="stylesheet" href="{{ rootPath }}styles/main.css{{ version }}">
-
-		{% for weight in [400, 700] %}
-			<link rel="preload" href="fonts/ptsans-{{ weight }}.woff2" as="font" crossorigin="anonymous">
-		{% endfor %}
 	</head>
 	<body>
 		<header class="header">

@@ -33,6 +33,10 @@
 			background-color: rgba(0, 0, 0, 0.4);
 		}
 
+		&--one {
+			background-image: url("../images/banner-1-mob.jpg");
+		}
+
 		&--two {
 			background-image: url("../images/banner-2-mob.jpg");
 		}
@@ -42,7 +46,6 @@
 		}
 
 		&--for {
-			background-color: rgba(0, 0, 0, 0.4);
 			background-image: url("../images/banner-4-mob.jpg");
 		}
 	}
@@ -60,9 +63,17 @@
 
 	&--one {
 		margin: 0 0 26px;
+		padding-top: 64px;
 		font-size: 65px;
 		line-height: 71px;
 		color: $color-gray;
+
+		@include mobile {
+			margin: 0 0 29px;
+			font-size: 27px;
+			line-height: 32px;
+			color: $color-white;
+		}
 	}
 
 	&--two {
@@ -122,6 +133,11 @@
 		line-height: 45px;
 		font-family: "Lato-Regular", sans-serif;
 		color: $color-white;
+
+		@include mobile {
+			font-size: 16px;
+			line-height: 24px;
+		}
 	}
 
 	&--two {
@@ -163,7 +179,12 @@
 
 	&--one {
 		margin: 0 0 0 auto;
-		padding: 72px 15px 33px 0;
+		padding: 8px 15px 33px 0;
+
+		@include mobile {
+			position: relative;
+			padding: 24px 20px 80px;
+		}
 	}
 
 	&--two {
@@ -194,6 +215,10 @@
 	&--one {
 		font-weight: 900;
 		font-size: 36px;
+
+		@include mobile {
+			font-size: 17px;
+		}
 	}
 
 	&--two {
@@ -235,6 +260,12 @@
 		}
 	}
 
+	&--one {
+		@include mobile {
+			margin: 129px auto 0;
+		}
+	}
+
 	&--two {
 		margin: 77px auto 0;
 	}
@@ -251,6 +282,13 @@
 	text-decoration: none;
 	text-align: right;
 	color: $color-white;
+
+	@include mobile {
+		position: absolute;
+		top: 281px;
+		left: 19px;
+		font-size: 12px;
+	}
 }
 
 .swiper-content__subtitle > span {
