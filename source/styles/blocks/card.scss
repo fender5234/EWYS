@@ -2,8 +2,7 @@
 	padding: 100px 0 0 30px;
 
 	@include mobile {
-		width: min-content;
-		padding: 20px 0 40px;
+		padding: 20px 20px 40px;
 	}
 }
 
@@ -34,7 +33,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 0 20px;
-		width: min-content;
 		margin: 0 auto;
 		padding-top: 20px;
 	}
@@ -46,7 +44,6 @@
 
 	@include mobile {
 		position: relative;
-		max-width: 130px;
 	}
 }
 
@@ -94,7 +91,6 @@
 
 	@include mobile {
 		justify-self: center;
-		max-width: 130px;
 		margin-bottom: 23px;
 	}
 
@@ -173,7 +169,7 @@
 .card-buttons-list {
 	position: absolute;
 	top: 10px;
-	right: 23px;
+	right: 10px;
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -256,7 +252,7 @@
 
 .card-grade {
 	position: absolute;
-	top: 316px;
+	bottom: 10px;
 	left: 10px;
 	display: none;
 	padding: 5px 5px 5px 26px;
@@ -270,10 +266,14 @@
 	border-radius: 6px;
 
 	@include mobile {
-		top: 132px;
+		bottom: 5px;
 		left: 5px;
 		width: 77px;
 		padding: 3px 10px 3px 33px;
 		background-position: -40px 2px;
 	}
+}
+
+.card__position-span {
+	position: relative;
 }

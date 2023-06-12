@@ -1,5 +1,7 @@
 {% extends '../main.twig' %}
 {% block main %}
+{% include "catalog.twig" %}
+
 	<main class="page">
 		<div class="swiper-container container">
 			<div class="swiper">
@@ -131,6 +133,9 @@
 					<div class="card-wrapper">
 						<div class="card-item">
 							<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
 							<h3 class="card-title">Панама женская
 								<br>
 								и мужская летняя весенняя</h3>
@@ -141,7 +146,6 @@
 									<span class="card-price">474 ₽</span>
 								</div>
 							</div>
-							<span class="card-grade">Качество подтверждено</span>
 							<ul class="card-buttons-list">
 								<li class="card-buttons-item">
 									<label class="card-buttons-label">
@@ -167,6 +171,9 @@
 				</div>
 				<div class="card-item">
 					<img src="./images/sales-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
 					<h3 class="card-title">Бейсболка женская, кепка мужская демисезон</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 140157564</span>
@@ -175,7 +182,6 @@
 							<span class="card-price">1287 ₽</span>
 						</div>
 					</div>
-					<span class="card-grade">Качество подтверждено</span>
 					<ul class="card-buttons-list">
 						<li class="card-buttons-item">
 							<label class="card-buttons-label">
@@ -199,6 +205,9 @@
 				</div>
 				<div class="card-item card-item--mobile-hidden">
 					<img src="./images/sales-3.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
 					<h3 class="card-title">Нижнее белье женское комплект бесшовный в рубчик.</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 144957662</span>
@@ -207,7 +216,6 @@
 							<span class="card-price">495 ₽</span>
 						</div>
 					</div>
-					<span class="card-grade">Качество подтверждено</span>
 					<ul class="card-buttons-list">
 						<li class="card-buttons-item">
 							<label class="card-buttons-label">
@@ -231,6 +239,9 @@
 				</div>
 				<div class="card-item card-item--mobile-hidden">
 					<img src="./images/sales-4.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
 					<h3 class="card-title">Рюкзак женский мужской школьный детский черный</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 157295287</span>
@@ -239,7 +250,6 @@
 							<span class="card-price">960 ₽</span>
 						</div>
 					</div>
-					<span class="card-grade">Качество подтверждено</span>
 					<ul class="card-buttons-list">
 						<li class="card-buttons-item">
 							<label class="card-buttons-label">
@@ -278,7 +288,7 @@
 								<h3 class="about__title">Акции</h3>
 								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
 							</div>
-							<p class="about__subtitle">Бесплатная доставка на&nbsp;2&nbsp;заказ, при заказе от&nbsp;10&nbsp;000&nbsp;₽ и&nbsp;каждый заказ при заказе свыше 100&nbsp;000&nbsp;₽
+							<p class="about__subtitle">Бесплатная доставка на&nbsp;2&nbsp;заказ, при заказе от&nbsp;10&nbsp;000&nbsp;&#x20bd; и&nbsp;каждый заказ при заказе свыше 100&nbsp;000&nbsp;&#x20bd;
 							</p>
 						</li>
 						<li class="about__list-item splide__slide">
@@ -300,7 +310,7 @@
 								<h3 class="about__title">Гибкая система скидок</h3>
 								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
 							</div>
-							<p class="about__subtitle">При заказе от&nbsp;100&nbsp;000&nbsp;₽ скидка на&nbsp;следующие заказы 3&nbsp;%; 250&nbsp;000&nbsp;₽&nbsp;&mdash; 4&nbsp;%; 500&nbsp;000&nbsp;₽&nbsp;&mdash; 5&nbsp;%
+							<p class="about__subtitle">При заказе от&nbsp;100&nbsp;000&nbsp;&#x20bd; скидка на&nbsp;следующие заказы 3&nbsp;%; 250&nbsp;000&nbsp;₽&nbsp;&mdash; 4&nbsp;%; 500&nbsp;000&nbsp;₽&nbsp;&mdash; 5&nbsp;%
 							</p>
 						</li>
 						<li class="about__list-item splide__slide">
@@ -332,12 +342,14 @@
 			<div class="card-wrapper">
 				<div class="card-item">
 					<img src="./images/underpants.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
 					<h3 class="card-title">Трусы мужские, плавки, набор боксеров, 4 шт</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 72302360</span>
 						<span class="card-price">654 ₽</span>
 					</div>
-					<span class="card-grade">Качество подтверждено</span>
 					<ul class="card-buttons-list">
 						<li class="card-buttons-item">
 							<label class="card-buttons-label">
@@ -363,12 +375,14 @@
 		</div>
 		<div class="card-item">
 			<img src="./images/t-shirt.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+			<span class="card__position-span">
+				<span class="card-grade">Качество подтверждено</span>
+			</span>
 			<h3 class="card-title">Футболка, плотность 210 гр/м2</h3>
 			<div class="card-note">
 				<span class="card-articul">Арт.: MF2040/02/K</span>
 				<span class="card-price">280 ₽</span>
 			</div>
-			<span class="card-grade">Качество подтверждено</span>
 			<ul class="card-buttons-list">
 				<li class="card-buttons-item">
 					<label class="card-buttons-label">
@@ -392,12 +406,14 @@
 		</div>
 		<div class="card-item card-item--mobile-hidden">
 			<img src="./images/hoodie.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+			<span class="card__position-span">
+				<span class="card-grade">Качество подтверждено</span>
+			</span>
 			<h3 class="card-title">Худи без начеса двунитка</h3>
 			<div class="card-note">
 				<span class="card-articul">Арт.: MH2000/01</span>
 				<span class="card-price">680 ₽</span>
 			</div>
-			<span class="card-grade">Качество подтверждено</span>
 			<ul class="card-buttons-list">
 				<li class="card-buttons-item">
 					<label class="card-buttons-label">
@@ -421,12 +437,14 @@
 		</div>
 		<div class="card-item card-item--mobile-hidden">
 			<img src="./images/hoodie-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+			<span class="card__position-span">
+				<span class="card-grade">Качество подтверждено</span>
+			</span>
 			<h3 class="card-title">Худи с начесом оверсайз унисекс чёрный</h3>
 			<div class="card-note">
 				<span class="card-articul">Арт.: Н/Д</span>
 				<span class="card-price">930 ₽</span>
 			</div>
-			<span class="card-grade">Качество подтверждено</span>
 			<ul class="card-buttons-list">
 				<li class="card-buttons-item">
 					<label class="card-buttons-label">

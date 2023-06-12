@@ -30,8 +30,6 @@ new Swiper('.quickwiev__swiper', {
 	}
 });
 
-
-
 // Функция скрыть показать текст перед футером
 const showText = () => {
 	const infoWrapper = document.querySelector('.info__wrapper');
@@ -54,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const splide = new Splide(splideWrapper, {
 		arrows: false,
 		perPage: 1,
-		type: 'loop',
+		type: 'loop'
 	});
-	const mqs = window.matchMedia("(max-width:600px)");
+	const mqs = window.matchMedia('(max-width:600px)');
 	if (mqs.matches) {
 		splide.mount();
 	}

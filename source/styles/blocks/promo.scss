@@ -5,7 +5,7 @@
 
 	@include mobile {
 		display: block;
-		padding: 0;
+		padding: 40px 20px 20px;
 	}
 }
 
@@ -18,7 +18,6 @@
 
 	@include mobile {
 		grid-template-columns: 1fr;
-		padding-top: 40px;
 	}
 }
 
@@ -45,17 +44,14 @@
 
 	@include mobile {
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 0;
-		max-width: 300px;
+		grid-gap: 0 10px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 0;
 	}
 }
 
 .promo__bottom-container > .promo__link {
 	@include mobile {
-		min-width: 130px;
-		min-height: 130px;
 		padding: 0;
 	}
 }
@@ -71,9 +67,7 @@
 	border-radius: 6px;
 
 	@include mobile {
-		min-width: 280px;
-		min-height: 302px;
-		margin: 0 auto 20px;
+		margin: 0 0 20px;
 		background-size: 100%;
 	}
 
@@ -87,14 +81,9 @@
 		background-image: url("../images/sprite.svg#arrow-card");
 
 		@include mobile {
-			left: 230px;
+			right: 3px;
+			left: auto;
 		}
-	}
-
-	&--hits,
-	&--sale {
-		max-width: 400px;
-		min-height: 400px;
 	}
 
 	&--hits {
@@ -120,7 +109,6 @@
 		@include mobile {
 			min-width: 280px;
 			min-height: 140px;
-			margin: 0 auto 20px;
 			background-size: 100%;
 		}
 	}
@@ -132,13 +120,11 @@
 		@include mobile {
 			min-width: 280px;
 			min-height: 140px;
-			margin: 0 auto 20px;
 			background-size: 100%;
 		}
 	}
 
 	&--bottom {
-		max-width: 170px;
 		min-height: 170px;
 		font-size: 16px;
 		line-height: 20px;
@@ -182,17 +168,17 @@
 
 .promo__link-span {
 	display: block;
-	padding: 357px 0 0 10px;
+	padding: 357px 0 10px 10px;
 
 	@include mobile {
-		padding: 258px 0 0 10px;
+		padding: 258px 0 10px 10px;
 	}
 
 	&--right-block {
 		padding: 141px 0 0 10px;
 
 		@include mobile {
-			padding: 97px 0 0 10px;
+			padding: 102px 0 10px 10px;
 		}
 	}
 
