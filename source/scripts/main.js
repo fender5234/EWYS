@@ -1,8 +1,5 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiperMainWrapper = document.querySelector('.about__wrapper');
-const aboutWrapper = document.querySelector('.about__list');
-const aboutListItem = document.querySelectorAll('.about__list-item');
+import Splide from '@splidejs/splide';
 
 new Swiper('.swiper', {
 	loop: true,
@@ -33,33 +30,7 @@ new Swiper('.quickwiev__swiper', {
 	}
 });
 
-const mqs = window.matchMedia('(max-width:600px)');
-mqs.addEventListener('change', () => {
-	if (mqs.matches) {
-		swiperMainWrapper.classList.add('swiper');
-		aboutWrapper.classList.add('swiper-wrapper');
-		aboutListItem.forEach((item) => item.classList.add('swiper-slide'));
 
-		new Swiper(swiperMainWrapper, {
-			loop: true,
-			modules: [Navigation, Pagination],
-
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-
-			pagination: {
-				clickable: true,
-				el: '.swiper-pagination'
-			}
-		});
-	} else {
-		swiperMainWrapper.classList.remove('swiper');
-		aboutWrapper.classList.remove('swiper-wrapper');
-		aboutListItem.forEach((item) => item.classList.remove('swiper-slide'));
-	}
-});
 
 // Функция скрыть показать текст перед футером
 const showText = () => {
@@ -76,4 +47,24 @@ const showText = () => {
 	});
 };
 showText();
+
+const splideWrapper = document.querySelector('.about__wrapper');
 //
+document.addEventListener('DOMContentLoaded', () => {
+	const splide = new Splide(splideWrapper, {
+		arrows: false,
+		perPage: 1,
+		type: 'loop',
+	});
+	const mqs = window.matchMedia("(max-width:600px)");
+	if (mqs.matches) {
+		splide.mount();
+	}
+	mqs.addEventListener('change', () => {
+		if (mqs.matches) {
+			splide.mount();
+		} else {
+			splide.destroy();
+		}
+	});
+});
