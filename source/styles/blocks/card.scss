@@ -2,7 +2,7 @@
 	padding: 100px 0 0 30px;
 
 	@include mobile {
-		padding: 20px 20px 40px;
+		padding: 20px 10px 40px;
 	}
 }
 
@@ -32,7 +32,7 @@
 	@include mobile {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 0 20px;
+		grid-gap: 0 10px;
 		margin: 0 auto;
 		padding-top: 20px;
 	}
@@ -79,6 +79,7 @@
 	@include mobile {
 		align-self: flex-end;
 		padding-top: 5px;
+		font-size: 20px;
 	}
 }
 
@@ -96,10 +97,6 @@
 
 	&:hover {
 		.card-buttons-list {
-			display: block;
-		}
-
-		.card-grade {
 			display: block;
 		}
 	}
@@ -254,7 +251,7 @@
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	display: none;
+	display: block;
 	padding: 5px 5px 5px 26px;
 	font-size: 12px;
 	line-height: 14px;

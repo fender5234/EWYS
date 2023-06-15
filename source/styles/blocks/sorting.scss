@@ -1,0 +1,23 @@
+.sorting {
+	display: flex;
+	grid-column: 2/3;
+	padding: 80px 0 0;
+}
+
+.sorting__title {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.sorting__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sorting__list-link {
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: none;
+}

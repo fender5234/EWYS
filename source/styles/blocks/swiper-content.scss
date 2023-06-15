@@ -21,6 +21,7 @@
 
 	@include mobile {
 		position: relative;
+		background-size: cover;
 
 		&::before {
 			content: "";

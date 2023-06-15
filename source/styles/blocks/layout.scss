@@ -1,0 +1,19 @@
+.layout {
+	display: inline-block;
+	grid-column: 2/3;
+	margin-left: auto;
+}
+
+.layout__button {
+	width: 25px;
+	height: 16px;
+	background-color: transparent;
+	background-image: url("../images/sprite.svg#button-rows");
+	border: none;
+	cursor: pointer;
+
+	&--columns {
+		width: 20px;
+		background-image: url("../images/sprite.svg#button-columns");
+	}
+}

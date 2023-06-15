@@ -1,139 +1,410 @@
 {% extends '../main.twig' %}
 {% block main %}
 	<main class="page">
-		<ul class="catalog-list">
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">Мужская одежда</h2>
-				<ul class="catalog-list__item-list">
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Футболки</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Худи</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Обувь</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">Головные уборы</h2>
-						<ul class="catalog-list__goods-list">
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Панамы</a>
+		<section class="section__catalog">
+			<h1 class="visually-hidden">Каталог товаров</h1>
+			<div class="catalog__container container catalog">
+				<div class="catalog__left-wrapper">
+					<div class="breadcrumbs-wrapper">
+						<ul class="breadcrumbs-list">
+							<li class="breadcrumbs-list__item">
+								<a href="/index" class="breadcrums-list__link">Главная</a>
 							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
-							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Шапки</a>
+							<li class="breadcrumbs-list__item">
+								<a class="breadcrums-list__link breadcrums-list__link--current">Каталог</a>
 							</li>
 						</ul>
-					</li>
-				</ul>
-			</li>
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">Женская одежда</h2>
-				<ul class="catalog-list__item-list">
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Футболки</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Худи</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Обувь</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">Головные уборы</h2>
-						<ul class="catalog-list__goods-list">
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Панамы</a>
+					</div>
+					<div class="catalog-list-wrapper">
+						<h2 class="catalog-list__header">Категории товаров</h2>
+						<ul class="catalog-list">
+							<li class="catalog-list__item">
+								<h2 class="catalog-list__title">
+									<a href="#" class="catalog-list__good-list__link">Мужская одежда</a>
+								</h2>
+								<ul class="catalog-list__item-list">
+									<li class="catalog-list__item-list-item">
+										<h2 class="catalog-list__item-list__title">
+											<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+										</h2>
+									</li>
+									<li class="catalog-list__item-list-item">
+
+										<h2 class="catalog-list__item-list__title">
+											<a href="#" class="catalog-list__good-list__link">Футболки</a>
+										</h2>
+									</li>
+									<li class="catalog-list__item-list-item">
+										<h2 class="catalog-list__item-list__title">
+											<a href="#" class="catalog-list__good-list__link">Худи</a>
+										</h2>
+									</li>
+									<li class="catalog-list__item-list-item">
+										<h2 class="catalog-list__item-list__title">
+											<a href="#" class="catalog-list__good-list__link">Обувь</a>
+										</h2>
+									</li>
+									<li class="catalog-list__item-list-item">
+										<h2 class="catalog-list__item-list__title">
+											<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+										</h2>
+										<ul class="catalog-list__goods-list">
+											<li class="catalog-list__good-list__list-item">
+												<a href="#" class="catalog-list__good-list__link">Панамы</a>
+											</li>
+											<li class="catalog-list__good-list__list-item">
+												<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+											</li>
+											<li class="catalog-list__good-list__list-item">
+												<a href="#" class="catalog-list__good-list__link">Шапки</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
 							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
-							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Шапки</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">Детская одежда</h2>
-				<ul class="catalog-list__item-list">
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Футболки</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Худи</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">
-							<a href="#" class="catalog-list__good-list__link">Обувь</a>
-						</h2>
-					</li>
-					<li class="catalog-list__item-list">
-						<h2 class="catalog-list__item-list__title">Головные уборы</h2>
-						<ul class="catalog-list__goods-list">
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Панамы</a>
-							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
-							</li>
-							<li class="catalog-list__good-list__list-item">
-								<a href="#" class="catalog-list__good-list__link">Шапки</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">
-					<a href="#" class="catalog-list__good-list__link">Аксессуары</a>
-				</h2>
-			</li>
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">
-					<a href="#" class="catalog-list__good-list__link">Новинки</a>
-				</h2>
-			</li>
-			<li class="catalog-list__item">
-				<h2 class="catalog-list__title">
-					<a href="#" class="catalog-list__good-list__link">Акции</a>
-				</h2>
-			</li>
-		</ul>
-	</li>
-</ul></main>{% endblock %}
+						</li>
+						<li class="catalog-list__item">
+							<h2 class="catalog-list__title">
+								<a href="#" class="catalog-list__good-list__link">Женская одежда</a>
+							</h2>
+							<ul class="catalog-list__item-list">
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Футболки</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Худи</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Обувь</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+									</h2>
+									<ul class="catalog-list__goods-list">
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Панамы</a>
+										</li>
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+										</li>
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Шапки</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="catalog-list__item">
+							<h2 class="catalog-list__title">
+								<a href="#" class="catalog-list__good-list__link">Детская одежда</a>
+							</h2>
+							<ul class="catalog-list__item-list">
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Футболки</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Худи</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Обувь</a>
+									</h2>
+								</li>
+								<li class="catalog-list__item-list-item">
+									<h2 class="catalog-list__item-list__title">
+										<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+									</h2>
+									<ul class="catalog-list__goods-list">
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Панамы</a>
+										</li>
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+										</li>
+										<li class="catalog-list__good-list__list-item">
+											<a href="#" class="catalog-list__good-list__link">Шапки</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="catalog-list__item">
+							<h2 class="catalog-list__title">
+								<a href="#" class="catalog-list__good-list__link">Аксессуары</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item">
+							<h2 class="catalog-list__title">
+								<a href="#" class="catalog-list__good-list__link">Новинки</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item">
+							<h2 class="catalog-list__title">
+								<a href="#" class="catalog-list__good-list__link">Акции</a>
+							</h2>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="catalog__right-wrapper">
+				<h2 class="catalog__good-title">Панамы</h2>
+				<form action="https://echo.htmlacademy.ru/courses" class="setting__form-form" method="get">
+					<ul class="setting-form__list">
+						<li class="setting-form__list-item">
+							<label class="setting-form__price-label">
+								<span class="setting__title">Стоимость, ₽</span>
+								<input class="setting-form__price-input" type="number" placeholder="от 1000" min="1000" max="100000">
+								<input class="setting-form__price-input" type="number" placeholder="до 100 000" min="1000" max="100000">
+							</label>
+						</li>
+						<li class="setting-form__list-item">
+							<label class="setting-form__size-label">
+								<span class="setting__title">Размер</span>
+								<select name="" id="" class="setting-form__size">
+									<option value="46">46-48</option>
+									<option value="48">48-50</option>
+									<option value="50-52">50-52</option>
+									<option value="52-54" selected>52-54</option>
+								</select>
+							</label>
+						</li>
+						<li class="setting-form__list-item">
+							<label class="setting-form__color-label">
+								<span class="setting__title">Цвет</span>
+								<select name="" id="" class="setting-form__color-select">
+									<label name="color" value="red">Красный</label>
+									<label name="color" value="green">Зеленый</label>
+									<label name="color" value="blue">Синий</label>
+								</select>
+							</label>
+						</li>
+						<li class="setting-form__list-item">
+							<button type="submit" class="setting-form__submit-button">Применить</button>
+						</li>
+					</ul>
+				</form>
+				<div class="sorting">
+					<ul class="sorting__list">
+						<li class="sorting__list-item">
+							<span class="sorting__title">Сортировать по:</span>
+						</li>
+						<li class="sorting__list-item">
+							<a href="#" class="sorting__list-link sorting__list-link--active">по популярности</a>
+						</li>
+						<li class="sorting__list-item">
+							<a href="#" class="sorting__list-link">по новизне</a>
+						</li>
+						<li class="sorting__list-item">
+							<a href="#" class="sorting__list-link">по возрастанию цены</a>
+						</li>
+						<li class="sorting__list-item">
+							<a href="#" class="sorting__list-link">по убыванию</a>
+						</li>
+					</ul>
+					<div class="layout">
+						<button type="button" class="layout__button"></button>
+						<button type="button" class="layout__button layout__button--columns"></button>
+					</div>
+				</div>
+				<div class="catalog__card-wrapper">
+					<ul class="catalog__list-goods">
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="catalog__list-goods-item">
+							<div class="card-item card-item__catalog">
+								<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image catalog__image" width="270" height="350px">
+								<span class="card__position-span">
+									<span class="card-grade">Качество подтверждено</span>
+								</span>
+								<h3 class="card-title">Панама женская
+									<br>
+									и мужская летняя весенняя
+								</h3>
+								<div class="card-note">
+									<span class="card-articul">Арт.: 03982</span>
+									<div class="card__price-wrapper">
+										<span class="card-price-old">2287 ₽</span>
+										<span class="card-price">474 ₽</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section></main>{% endblock %}
