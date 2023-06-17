@@ -224,3 +224,35 @@
 		display: none;
 	}
 }
+
+.header-catalog-menu {
+	position: relative;
+	display: none;
+	padding: 0 20px;
+}
+
+.header-catalog-menu__search-label {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 3;
+	width: stretch;
+	padding: 0 20px;
+}
+
+.header-catalog-menu__search-input {
+	position: relative;
+	box-sizing: border-box;
+	width: stretch;
+	padding: 9px 19px 7px 39px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "Lato-Regular", sans-serif;
+	background-image: url("../images/sprite.svg#search");
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 20px 20px;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+	border-radius: 6px;
+}

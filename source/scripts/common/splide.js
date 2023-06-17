@@ -12,7 +12,7 @@ const splideInit = () => {
 		const mqs = window.matchMedia('(max-width:600px)');
 		if (mqs.matches) {
 			splide.mount();
-		};
+		}
 
 		mqs.addEventListener('change', () => {
 			if (mqs.matches) {

@@ -12,9 +12,15 @@
 
 .setting-form__list {
 	display: flex;
+	align-items: flex-end;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	@include mobile {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .setting-form__list-item:not(:last-child) {
@@ -31,10 +37,15 @@
 	background: rgba(51, 51, 51, 0.07);
 	border: none;
 	border-radius: 6px;
+	appearance: none;
+
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .setting-form__color-select {
-	width: 150px;
+	box-sizing: border-box;
 	padding: 10px 15px 10px 10px;
 	font-size: 14px;
 	line-height: 16px;
@@ -45,18 +56,18 @@
 }
 
 .setting-form__size {
-	width: 150px;
-	padding: 10px;
+	vertical-align: super;
 	font-size: 14px;
 	line-height: 16px;
 	font-family: "Lato-Regular", sans-serif;
-	background-color: rgba(51, 51, 51, 0.07);
-	border: none;
-	border-radius: 6px;
 }
 
 .setting__form-form {
 	padding: 24px 0 0 23px;
+
+	@include mobile {
+		padding: 0;
+	}
 }
 
 .setting-form__submit-button {
@@ -72,6 +83,66 @@
 	border-radius: 6px;
 }
 
-.sorting__list-item {
-	margin-right: 20px;
+.setting-form__button {
+	box-sizing: border-box;
+	width: 150px;
+	padding: 12px 10px;
+	text-align: left;
+	background-color: rgba(51, 51, 51, 0.07);
+	border: none;
+	border-radius: 6px;
+
+	@include mobile {
+		width: 100%;
+	}
+
+	&--active {
+		border-radius: 6px 6px 0 0;
+	}
+}
+
+.setting-form__select-list {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	z-index: 1;
+	display: none;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	background-color: #f1f1f1;
+	border-radius: 0 0 6px 6px;
+
+	&--active {
+		display: block;
+	}
+}
+
+.setting-form__checkbox {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	border-radius: 6px;
+	appearance: none;
+}
+
+.setting-form__label {
+	position: relative;
+
+	:checked {
+		border: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: 4;
+			width: 21px;
+			height: 21px;
+			background-image: url("../images/sprite.svg#greencheck");
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+		}
+	}
 }

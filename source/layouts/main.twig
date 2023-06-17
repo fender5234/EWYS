@@ -50,74 +50,217 @@
 					</div>
 				</div>
 			</div>
-		</header>
-		{% block main %}{% endblock %}
-		<footer class="footer">
-			<div class="footer__container container">
-				<div class="footer__left-part">
-					<div class="footer__wrapper">
-						<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
-						<ul class="footer__social-list">
-							<li class="footer__social-list-item">
-								<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+			<div class="header-catalog-menu">
+				<label class="header-catalog-menu__search-label">
+					<input class="header-catalog-menu__search-input" type="search" name="search" placeholder="Поиск">
+				</label>
+				<ul class="catalog-list">
+					<li class="catalog-list__item">
+						<h2 class="catalog-list__title">
+							<a href="#" class="catalog-list__good-list__link">Мужская одежда</a>
+						</h2>
+						<ul class="catalog-list__item-list">
+							<li class="catalog-list__item-list-item">
+								<h2 class="catalog-list__item-list__title">
+									<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+								</h2>
 							</li>
-							<li class="footer__social-list-item">
-								<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
-							</li>
-							<li class="footer__social-list-item">
-								<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
-							</li>
-							<li class="footer__social-list-item">
-								<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
-							</li>
-						</ul>
-						<p class="copyright">2022-2023 © EWYS.ru</p>
-					</div>
-					<div class="footer__info">
-						<h2 class="footer__info-title">Информация</h2>
-						<ul class="footer__info-list">
-							<li class="footer__info-list-item">
-								<a href="#" class="footer__info-link">Каталог</a>
-							</li>
-							<li class="footer__info-list-item">
-								<a href="#" class="footer__info-link">Прайс-лист</a>
-							</li>
-							<li class="footer__info-list-item">
-								<a href="#" class="footer__info-link">Контакты</a>
-							</li>
-							<li class="footer__info-list-item">
-								<a href="#" class="footer__info-link">Обучение ВБ</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__right-part">
-					<section class="footer__section-form form">
-						<form action="http://foo.com" class="footer__form form">
-							<h2 class="form__title">Обратная связь</h2>
-							<label class="form__label">
-								<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
-							<label class="form__label">
-								<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
-							<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
-								Даю согласие на обработку cвоих персональных данных</label>
-							<button class="form__button" type="submit">Отправить</button>
-						</form>
-						<a href="#top" class="footer__anchor"></a>
-					</section>
-				</div>
-			</div>
-		</footer>
-		<script>
-			window.appData = {{ appData|json_encode() }};
-		</script>
-		<script src="{{ rootPath }}scripts/main.js{{ version }}"></script>
+							<li class="catalog-list__item-list-item">
 
-		{% if isDev %}
-			<script>
-				window.pixelperfect = {{ pixelperfect }};
-			</script>
-			<script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
-		{% endif %}
+								<h2 class="catalog-list__item-list__title">
+									<a href="#" class="catalog-list__good-list__link">Футболки</a>
+								</h2>
+							</li>
+							<li class="catalog-list__item-list-item">
+								<h2 class="catalog-list__item-list__title">
+									<a href="#" class="catalog-list__good-list__link">Худи</a>
+								</h2>
+							</li>
+							<li class="catalog-list__item-list-item">
+								<h2 class="catalog-list__item-list__title">
+									<a href="#" class="catalog-list__good-list__link">Обувь</a>
+								</h2>
+							</li>
+							<li class="catalog-list__item-list-item">
+								<h2 class="catalog-list__item-list__title">
+									<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+								</h2>
+								<ul class="catalog-list__goods-list">
+									<li class="catalog-list__good-list__list-item">
+										<a href="#" class="catalog-list__good-list__link">Панамы</a>
+									</li>
+									<li class="catalog-list__good-list__list-item">
+										<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+									</li>
+									<li class="catalog-list__good-list__list-item">
+										<a href="#" class="catalog-list__good-list__link">Шапки</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</li>
+				<li class="catalog-list__item">
+					<h2 class="catalog-list__title">
+						<a href="#" class="catalog-list__good-list__link">Женская одежда</a>
+					</h2>
+					<ul class="catalog-list__item-list">
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Футболки</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Худи</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Обувь</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+							</h2>
+							<ul class="catalog-list__goods-list">
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Панамы</a>
+								</li>
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+								</li>
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Шапки</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="catalog-list__item">
+					<h2 class="catalog-list__title">
+						<a href="#" class="catalog-list__good-list__link">Детская одежда</a>
+					</h2>
+					<ul class="catalog-list__item-list">
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Футболки</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Худи</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Обувь</a>
+							</h2>
+						</li>
+						<li class="catalog-list__item-list-item">
+							<h2 class="catalog-list__item-list__title">
+								<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
+							</h2>
+							<ul class="catalog-list__goods-list">
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Панамы</a>
+								</li>
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
+								</li>
+								<li class="catalog-list__good-list__list-item">
+									<a href="#" class="catalog-list__good-list__link">Шапки</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="catalog-list__item">
+					<h2 class="catalog-list__title">
+						<a href="#" class="catalog-list__good-list__link">Аксессуары</a>
+					</h2>
+				</li>
+				<li class="catalog-list__item">
+					<h2 class="catalog-list__title">
+						<a href="#" class="catalog-list__good-list__link">Новинки</a>
+					</h2>
+				</li>
+				<li class="catalog-list__item">
+					<h2 class="catalog-list__title">
+						<a href="#" class="catalog-list__good-list__link">Акции</a>
+					</h2>
+				</li>
+			</ul>
+		</div>
 	</body>
-</html>
+</html></header>{% block main %}{% endblock %}<footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="http://foo.com" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {{ appData|json_encode() }};</script><script src="{{ rootPath }}scripts/main.js{{ version }}"></script>{% if isDev %}
+<script>
+	window.pixelperfect = {{ pixelperfect }};
+</script>
+<script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>{% endif %}</body></html>

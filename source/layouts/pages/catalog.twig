@@ -169,35 +169,71 @@
 			</div>
 			<div class="catalog__right-wrapper">
 				<h2 class="catalog__good-title">Панамы</h2>
-				<form action="https://echo.htmlacademy.ru/courses" class="setting__form-form" method="get">
+				<form action="https://echo.htmlacademy.ru/courses" class="setting__form-form" method="get" id="setting-form">
 					<ul class="setting-form__list">
 						<li class="setting-form__list-item">
 							<label class="setting-form__price-label">
 								<span class="setting__title">Стоимость, ₽</span>
-								<input class="setting-form__price-input" type="number" placeholder="от 1000" min="1000" max="100000">
-								<input class="setting-form__price-input" type="number" placeholder="до 100 000" min="1000" max="100000">
+								<input id="input0" name="min-price" class="setting-form__price-input" type="number" placeholder="от 1000" min="1000" max="100000">
 							</label>
+							<div id="slider"></div>
 						</li>
 						<li class="setting-form__list-item">
-							<label class="setting-form__size-label">
-								<span class="setting__title">Размер</span>
-								<select name="" id="" class="setting-form__size">
-									<option value="46">46-48</option>
-									<option value="48">48-50</option>
-									<option value="50-52">50-52</option>
-									<option value="52-54" selected>52-54</option>
-								</select>
+							<label class="setting-form__price-label">
+								<input id="input1" name="max-price" class="setting-form__price-input" type="number" placeholder="до 100 000" min="1000" max="100000">
 							</label>
 						</li>
-						<li class="setting-form__list-item">
-							<label class="setting-form__color-label">
-								<span class="setting__title">Цвет</span>
-								<select name="" id="" class="setting-form__color-select">
-									<label name="color" value="red">Красный</label>
-									<label name="color" value="green">Зеленый</label>
-									<label name="color" value="blue">Синий</label>
-								</select>
-							</label>
+						<li class="setting-form__list-item setting-form__list-item-select">
+							<span class="setting__title">Размер</span>
+							<button id="button-size" class="setting-form__button" type="button">Выбор размера</button>
+							<ul class="setting-form__select-list">
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="size" value="46-48" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											46-48</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="size" value="48-50" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											48-50</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="size" value="50-52" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											50-52</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="size" value="52-54" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											52-54</span>
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li class="setting-form__list-item setting-form__list-item-select">
+							<span class="setting__title">Цвет</span>
+							<button id="button-color" class="setting-form__button" type="button">Выбор цвета</button>
+							<ul class="setting-form__select-list">
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="color" value="blue" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											Синий</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="color" value="red" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											Красный</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="color" value="yellow" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											Желтый</span>
+									</label>
+								</li>
+								<li class="setting-form__item">
+									<label class="setting-form__label"><input name="color" value="white" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
+											Белый</span>
+									</label>
+								</li>
+							</ul>
 						</li>
 						<li class="setting-form__list-item">
 							<button type="submit" class="setting-form__submit-button">Применить</button>
