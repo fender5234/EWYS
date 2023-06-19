@@ -16,4 +16,14 @@
 		width: 20px;
 		background-image: url("../images/sprite.svg#button-columns");
 	}
+
+	&--filter {
+		display: none;
+		width: 20px;
+		background-image: url("../images/sprite.svg#button-filter");
+
+		@include mobile {
+			display: block;
+		}
+	}
 }

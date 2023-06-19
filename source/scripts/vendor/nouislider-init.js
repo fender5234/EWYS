@@ -1,4 +1,4 @@
-import noUiSlider from './nouislider.min.mjs'
+import noUiSlider from './nouislider.min.mjs';
 
 const nouislider = () => {
 	const slider = document.getElementById('slider');
@@ -11,12 +11,12 @@ const nouislider = () => {
 		connect: true,
 		step: 100,
 		range: {
-			'min': [0],
-			'max': [100000],
+			min: [0],
+			max: [100000]
 		}
 	});
 
-	slider.noUiSlider.on('update', function(values, handle){
+	slider.noUiSlider.on('update', function (values, handle) {
 		inputs[handle].value = Math.round(values[handle]);
 	});
 

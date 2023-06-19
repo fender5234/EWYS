@@ -8,9 +8,11 @@
 }
 
 .catalog__right-wrapper {
+	position: relative;
 	padding: 93px 15px 80px 35px;
 
 	@include mobile {
+		position: relative;
 		padding: 0 20px;
 	}
 }
@@ -43,6 +45,10 @@
 	&--two-columns {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	@include mobile {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .catalog-list {
@@ -54,8 +60,8 @@
 
 	@include mobile {
 		position: absolute;
-    top: 0;
-    left: 0;
+		top: 0;
+		left: 0;
 		z-index: 2;
 		width: stretch;
 		padding: 80px 25px 0;

@@ -20,11 +20,33 @@
 	@include mobile {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-gap: 0 20px;
 	}
 }
 
 .setting-form__list-item:not(:last-child) {
 	margin-right: 20px;
+
+	@include mobile {
+		margin-right: 0;
+	}
+}
+
+.setting-form__list-item {
+	@include mobile {
+		margin: 0;
+
+		&--top {
+			margin: 0 0 60px;
+		}
+	}
+
+	&--button {
+		@include mobile {
+			grid-column: 1/-1;
+			justify-self: center;
+		}
+	}
 }
 
 .setting-form__price-input {
@@ -66,7 +88,19 @@
 	padding: 24px 0 0 23px;
 
 	@include mobile {
-		padding: 0;
+		display: none;
+
+		&--active {
+			position: absolute;
+			top: -60px;
+			right: 0;
+			left: 0;
+			z-index: 1;
+			display: block;
+			padding: 30px 20px;
+			background-color: $color-white;
+			box-shadow: -1px 44px 98px -8px rgba(51, 51, 51, 0.32);
+		}
 	}
 }
 
@@ -81,6 +115,21 @@
 	background-color: $color-green;
 	border: none;
 	border-radius: 6px;
+
+	&--reset {
+		padding: 8px 0;
+		color: $color-green;
+		background-color: $color-white;
+	}
+
+	@include mobile {
+		width: 250px;
+		margin-top: 20px;
+
+		&--reset {
+			margin-top: 10px;
+		}
+	}
 }
 
 .setting-form__button {
@@ -145,4 +194,35 @@
 			background-size: 20px 20px;
 		}
 	}
+}
+
+.setting__form-title {
+	margin: 0 0 20px;
+	padding: 0;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.setting__form-title-container {
+	display: none;
+
+	@include mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.setting__form-close-button {
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	background-image: url("../images/sprite.svg#button-closed");
+	border: none;
+	cursor: pointer;
+}
+
+.setting-form__list-item-select {
+	position: relative;
+	align-self: flex-start;
 }
