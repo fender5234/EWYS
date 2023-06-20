@@ -167,14 +167,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="catalog__right-wrapper">
+			<div class="catalog__right-wrapper" data-right-wrapper>
 				<h2 class="catalog__good-title">Панамы</h2>
-				<form action="https://echo.htmlacademy.ru/courses" class="setting__form-form" method="get" id="setting-form">
+				<form action="https://echo.htmlacademy.ru/courses" class="setting__form-form" method="get" data-setting-form>
 					<div class="setting__form-title-container">
 						<h3 class="setting__form-title">Фильтрация</h3>
-						<button class="setting__form-close-button" type="button"></button>
+						<button class="setting__form-close-button" type="button" data-close-button></button>
 					</div>
-					<ul class="setting-form__list">
+					<ul class="setting-form__list" data-setting-list>
 						<li class="setting-form__list-item setting-form__list-item--top">
 							<label class="setting-form__price-label">
 								<span class="setting__title">Стоимость, ₽</span>
@@ -189,8 +189,8 @@
 						</li>
 						<li class="setting-form__list-item setting-form__list-item-select">
 							<span class="setting__title">Размер</span>
-							<button id="button-size" class="setting-form__button" type="button">Выбор размера</button>
-							<ul class="setting-form__select-list" id="size-list">
+							<button class="setting-form__button" type="button" data-size-button>Выбор размера</button>
+							<ul class="setting-form__select-list" data-size-list>
 								<li class="setting-form__item">
 									<label class="setting-form__label"><input name="size" value="46-48" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
 											46-48</span>
@@ -215,8 +215,8 @@
 						</li>
 						<li class="setting-form__list-item setting-form__list-item-select">
 							<span class="setting__title">Цвет</span>
-							<button id="button-color" class="setting-form__button" type="button">Выбор цвета</button>
-							<ul class="setting-form__select-list" id="color-list">
+							<button class="setting-form__button" type="button" data-color-button>Выбор цвета</button>
+							<ul class="setting-form__select-list" data-color-list>
 								<li class="setting-form__item">
 									<label class="setting-form__label"><input name="color" value="blue" class="setting-form__checkbox" type="checkbox"><span class="setting-form__size">
 											Синий</span>
@@ -248,26 +248,16 @@
 					</ul>
 				</form>
 				<div class="sorting">
-					<ul class="sorting__list">
-						<li class="sorting__list-item">
-							<span class="sorting__title">Сортировать по:</span>
-						</li>
-						<li class="sorting__list-item">
-							<a href="#" class="sorting__list-link sorting__list-link--active">по популярности</a>
-						</li>
-						<li class="sorting__list-item">
-							<a href="#" class="sorting__list-link">по новизне</a>
-						</li>
-						<li class="sorting__list-item">
-							<a href="#" class="sorting__list-link">по возрастанию цены</a>
-						</li>
-						<li class="sorting__list-item">
-							<a href="#" class="sorting__list-link">по убыванию</a>
-						</li>
-					</ul>
+				<select class="sorting__select" name="" id="">
+				<option value="">По популярности</option>
+				<option value="">По новизне</option>
+				<option value="">По возрастанию цены</option>
+				<option value="">По убыванию цены</option>
+				</select>
 					<div class="layout">
-						<button type="button" class="layout__button layout__button--filter"></button>
+						<button type="button" class="layout__button layout__button--filter" data-filter-button></button>
 						<button type="button" class="layout__button"></button>
+						<button type="button" class="layout__button layout__button--one-columns"></button>
 						<button type="button" class="layout__button layout__button--columns"></button>
 					</div>
 				</div>

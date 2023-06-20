@@ -13,7 +13,7 @@
 
 	@include mobile {
 		position: relative;
-		padding: 0 20px;
+		padding: 0 10px;
 	}
 }
 
@@ -48,6 +48,7 @@
 
 	@include mobile {
 		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 0 10px;
 	}
 }
 
@@ -139,10 +140,6 @@
 	font-family: "Lato-Regular", sans-serif;
 	text-decoration: none;
 	color: $color-gray;
-}
-
-.sorting__list-link--active {
-	border-bottom: 1px solid $color-gray;
 }
 
 .card-item__catalog {

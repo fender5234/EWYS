@@ -2,6 +2,10 @@
 	display: inline-block;
 	grid-column: 2/3;
 	margin-left: auto;
+
+	@include mobile {
+		display: flex;
+	}
 }
 
 .layout__button {
@@ -12,9 +16,17 @@
 	border: none;
 	cursor: pointer;
 
+	@include mobile {
+		display: none;
+	}
+
 	&--columns {
 		width: 20px;
 		background-image: url("../images/sprite.svg#button-columns");
+
+		@include mobile {
+			display: block;
+		}
 	}
 
 	&--filter {
@@ -24,6 +36,16 @@
 
 		@include mobile {
 			display: block;
+		}
+	}
+
+	&--one-columns {
+		display: none;
+
+		@include mobile {
+			display: block;
+			width: 20px;
+			background-image: url("../images/sprite.svg#button-one-columns");
 		}
 	}
 }

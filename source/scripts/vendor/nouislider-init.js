@@ -11,7 +11,7 @@ const nouislider = () => {
 		connect: true,
 		step: 100,
 		range: {
-			min: [0],
+			min: [1000],
 			max: [100000]
 		}
 	});
