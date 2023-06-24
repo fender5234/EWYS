@@ -30,19 +30,17 @@ a {
 	}
 
 	&:focus-visible {
-		color: $color-gray;
-		border-radius: 5px;
-		outline-offset: 3px;
+	outline: none;
 	}
 }
 
 :focus-visible {
-	@include interactive-outline;
+	outline: none;
 }
 
 @supports not selector(:focus-visible) {
 	:focus {
-		@include interactive-outline;
+		outline: none;
 	}
 }
 

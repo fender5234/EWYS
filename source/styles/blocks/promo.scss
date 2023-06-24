@@ -159,6 +159,8 @@
 .promo__link-span {
 	display: block;
 	padding: 357px 0 10px 10px;
+	font-weight: 600;
+	font-family: "Lato-Semibold", sans-serif;
 
 	@include mobile {
 		padding: 258px 0 10px 10px;

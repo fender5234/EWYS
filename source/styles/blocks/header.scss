@@ -225,17 +225,12 @@
 	}
 }
 
-.header-catalog-menu {
-	position: relative;
-	display: none;
-	padding: 0 20px;
-}
-
 .header-catalog-menu__search-label {
 	position: absolute;
 	top: 20px;
 	left: 0;
 	z-index: 3;
+	display: none;
 	width: stretch;
 	padding: 0 20px;
 }

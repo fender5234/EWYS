@@ -18,9 +18,9 @@
 }
 .noUi-target {
 	position: absolute;
-	top: 253px;
-	left: 130px;
-	width: 168px;
+	top: 244px;
+	left: 41px;
+	width: 306px;
 
 	@include mobile {
 		position: absolute;
@@ -94,11 +94,11 @@
 /* Slider size and handle placement;
 	*/
 .noUi-horizontal {
-	height: 2px;
+	height: 4px;
 }
 .noUi-horizontal .noUi-handle {
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
 	right: -2px;
 	top: -3px;
 }

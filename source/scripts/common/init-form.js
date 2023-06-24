@@ -1,5 +1,8 @@
 const initForm = () => {
 	const rightWrapper = document.querySelector('[data-right-wrapper]');
+	if (!rightWrapper) {
+		return;
+	}
 	const buttonFilter = rightWrapper.querySelector('[data-filter-button]');
 	const buttonClose = rightWrapper.querySelector('[data-close-button]');
 	const catalogForm = rightWrapper.querySelector('[data-setting-form]');
@@ -10,9 +13,6 @@ const initForm = () => {
 	const buttonColor = rightWrapper.querySelector('[data-color-button]');
 
 
-	if (!rightWrapper) {
-		return;
-	}
 	rightWrapper.addEventListener('click', (event) => {
 		if (event.target === buttonFilter) {
 			catalogForm.classList.add('setting__form-form--active');
@@ -22,7 +22,7 @@ const initForm = () => {
 			colorList.classList.remove('setting-form__select-list--active');
 			buttonSize.classList.remove('setting-form__button--active');
 			sizeList.classList.remove('setting-form__select-list--active');
-		};
+		}
 		if (event.target === buttonColor) {
 			buttonSize.classList.remove('setting-form__button--active');
 			sizeList.classList.remove('setting-form__select-list--active');
@@ -33,14 +33,14 @@ const initForm = () => {
 			colorList.classList.remove('setting-form__select-list--active');
 			buttonSize.classList.toggle('setting-form__button--active');
 			sizeList.classList.toggle('setting-form__select-list--active');
-		};
+		}
 
 		if (event.target === catalogForm || event.target === settingList) {
 			buttonColor.classList.remove('setting-form__button--active');
 			colorList.classList.remove('setting-form__select-list--active');
 			buttonSize.classList.remove('setting-form__button--active');
 			sizeList.classList.remove('setting-form__select-list--active');
-		};
+		}
 	});
 };
 

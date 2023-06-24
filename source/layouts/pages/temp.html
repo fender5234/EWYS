@@ -1,60 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ projectName }}</title>
-		<meta name="description" content="{{ description }}">
-		<link rel="stylesheet" href="{{ rootPath }}styles/main.css{{ version }}">
-	</head>
-	<body>
-		<header class="header">
-			<h1 class="visually-hidden">
-				Оптовый онлайн магазин EWYS
-			</h1>
-			<div class="header__section header__section--color" id="top">
-				<div class="header__container-top container">
-					<nav class="header__nav">
-						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
-						<ul class="header__nav-list">
-							<li class="header__nav-list-item">
-								<a class="header__nav-link" href="#">Контакты</a>
-							</li>
-							<li class="header__nav-list-item">
-								<a class="header__nav-link" href="#">Прайс-лист</a>
-							</li>
-							<li class="header__nav-list-item">
-								<a class="header__nav-link" href="#">Заказать образец</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="header__section">
-				<div class="header__container-bottom container">
-					<div class="header__navbar">
-						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
-						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
-							<span class="header__navbar-link-span">Каталог</span>
-						</a>
-						<label class="header__search-label">
-							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
-						</label>
-						<a class="header__navbar-link header__navbar-link--favorite" href="#">
-							<span></span>
-							<span class="header__navbar-link-span">Избранное</span>
-						</a>
-						<a class="header__navbar-link header__navbar-link--by" href="#">
-							<span class="header__navbar-link-span">Корзина</span>
-						</a>
-					</div>
-					{# <ul class="catalog-list catalog-list--header" data-catalog-list>
+<ul class="catalog-list catalog-list--header" data-catalog-list>
 						<li class="catalog-list__item" data-catalog-item>
 							<h2 class="catalog-list__title">
 								<a href="https://dzen.ru/?yredirect=true" class="catalog-list__good-list__link">Мужская одежда</a>
 							</h2>
 							<button type="button" class="catalog-list__button" data-catalog-button></button>
-							<ul class="catalog-list__item-list catalog-list__item-list--header" data-sub-list-one>
+							<ul class="catalog-list__goods-list" data-sub-list-one>
 								<li class="catalog-list__item-list-item">
 									<h2 class="catalog-list__item-list__title">
 										<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
@@ -99,7 +49,7 @@
 								<a href="#" class="catalog-list__good-list__link">Женская одежда</a>
 							</h2>
 							<button type="button" class="catalog-list__button" data-catalog-button></button>
-							<ul class="catalog-list__item-list catalog-list__item-list--header" data-sub-list-one>
+							<ul class="catalog-list__goods-list" data-sub-list-one>
 								<li class="catalog-list__item-list-item">
 									<h2 class="catalog-list__item-list__title">
 										<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
@@ -144,7 +94,7 @@
 								<a href="#" class="catalog-list__good-list__link">Детская одежда</a>
 							</h2>
 							<button type="button" class="catalog-list__button" data-catalog-button></button>
-							<ul class="catalog-list__item-list catalog-list__item-list--header" data-sub-list-one>
+							<ul class="catalog-list__goods-list" data-sub-list-one>
 								<li class="catalog-list__item-list-item">
 									<h2 class="catalog-list__item-list__title">
 										<a href="#" class="catalog-list__good-list__link">Верхняя одежда</a>
@@ -182,23 +132,6 @@
 										</li>
 									</ul>
 								</li>
-										<li class="catalog-list__item-list-item">
-									<h2 class="catalog-list__item-list__title">
-										<a href="#" class="catalog-list__good-list__link">Головные уборы</a>
-									</h2>
-									<button type="button" class="catalog-list__button" data-catalog-button></button>
-									<ul class="catalog-list__goods-list catalog-list__goods-list--header" data-sub-list-two>
-										<li class="catalog-list__good-list__list-item">
-											<a href="#" class="catalog-list__good-list__link">Панамы</a>
-										</li>
-										<li class="catalog-list__good-list__list-item">
-											<a href="#" class="catalog-list__good-list__link">Бейсболки</a>
-										</li>
-										<li class="catalog-list__good-list__list-item">
-											<a href="#" class="catalog-list__good-list__link">Шапки</a>
-										</li>
-									</ul>
-								</li>
 							</ul>
 						</li>
 						<li class="catalog-list__item" data-catalog-item>
@@ -216,68 +149,4 @@
 								<a href="#" class="catalog-list__good-list__link">Акции</a>
 							</h2>
 						</li>
-					</ul> #}
-				</div>
-			</body>
-		</body>
-	</body>
-</html></header>{% block main %}{% endblock %}<footer class="footer">
-<div class="footer__container container">
-	<div class="footer__left-part">
-		<div class="footer__wrapper">
-			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
-			<ul class="footer__social-list">
-				<li class="footer__social-list-item">
-					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
-				</li>
-				<li class="footer__social-list-item">
-					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
-				</li>
-				<li class="footer__social-list-item">
-					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
-				</li>
-				<li class="footer__social-list-item">
-					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
-				</li>
-			</ul>
-			<p class="copyright">2022-2023 © EWYS.ru</p>
-		</div>
-		<div class="footer__info">
-			<h2 class="footer__info-title">Информация</h2>
-			<ul class="footer__info-list">
-				<li class="footer__info-list-item">
-					<a href="#" class="footer__info-link">Каталог</a>
-				</li>
-				<li class="footer__info-list-item">
-					<a href="#" class="footer__info-link">Прайс-лист</a>
-				</li>
-				<li class="footer__info-list-item">
-					<a href="#" class="footer__info-link">Контакты</a>
-				</li>
-				<li class="footer__info-list-item">
-					<a href="#" class="footer__info-link">Обучение ВБ</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="footer__right-part">
-		<section class="footer__section-form form">
-			<form action="http://foo.com" class="footer__form form">
-				<h2 class="form__title">Обратная связь</h2>
-				<label class="form__label">
-					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
-				<label class="form__label">
-					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
-				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
-					Даю согласие на обработку cвоих персональных данных</label>
-				<button class="form__button" type="submit">Отправить</button>
-			</form>
-			<a href="#top" class="footer__anchor"></a>
-		</section>
-	</div>
-</div></footer><script>
-window.appData = {{ appData|json_encode() }};</script><script src="{{ rootPath }}scripts/main.js{{ version }}"></script>{% if isDev %}
-<script>
-	window.pixelperfect = {{ pixelperfect }};
-</script>
-<script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>{% endif %}</body></html>
+					</ul>

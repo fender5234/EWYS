@@ -2,12 +2,17 @@ import noUiSlider from './nouislider.min.mjs';
 
 const nouislider = () => {
 	const slider = document.getElementById('slider');
+
+	if (!slider) {
+		return;
+	}
+
 	const input0 = document.getElementById('input0');
 	const input1 = document.getElementById('input1');
 	const inputs = [input0, input1];
 
 	noUiSlider.create(slider, {
-		start: [0, 100000],
+		start: [10500, 55500],
 		connect: true,
 		step: 100,
 		range: {

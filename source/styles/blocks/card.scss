@@ -9,18 +9,17 @@
 .card-header {
 	margin: 0;
 	padding: 0;
-	font-weight: 900;
+	font-weight: 400;
 	font-size: 30px;
 	line-height: 38px;
+	font-family: "Lato-Regular", sans-serif;
 	color: $color-gray;
 }
 
 .card-span {
+	font-weight: 900;
+	font-family: "Lato-Heavy", sans-serif;
 	color: $color-green;
-
-	@include mobile {
-		font-weight: 900;
-	}
 }
 
 .card-wrapper {
@@ -50,8 +49,10 @@
 .card-title {
 	margin: 0;
 	padding: 10px 0 4px;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
+	font-family: "Lato-Regular", sans-serif;
 	color: $color-gray;
 
 	@include mobile {
@@ -140,6 +141,7 @@
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
+	font-family: "Lato-Semibold", sans-serif;
 	text-decoration: none;
 	color: $color-gray;
 
@@ -185,8 +187,9 @@
 .card-button-note {
 	margin-right: 5px;
 	padding: 3px 8px;
-	background-color: rgb(172, 172, 172, 0.6);
+	background-color: rgb(172, 172, 172, 0.2);
 	border-radius: 6px;
+	backdrop-filter: blur(15px);
 	cursor: pointer;
 	user-select: none;
 
@@ -201,7 +204,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 
 	&:hover {
 		.card-button-note,
@@ -225,12 +228,13 @@
 .card-button {
 	width: 30px;
 	height: 30px;
-	background-color: rgb(172, 172, 172, 0.6);
+	background-color: rgb(172, 172, 172, 0.2);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px 20px;
 	border: none;
 	border-radius: 6px;
+	backdrop-filter: blur(15px);
 	cursor: pointer;
 
 	&--view {
@@ -256,11 +260,12 @@
 	font-size: 12px;
 	line-height: 14px;
 	color: $color-white;
-	background-color: rgb(172, 172, 172, 0.6);
+	background-color: rgb(172, 172, 172, 0.2);
 	background-image: url("../images/sprite.svg#grade");
 	background-repeat: no-repeat;
 	background-position: -69px 2px;
 	border-radius: 6px;
+	backdrop-filter: blur(15px);
 
 	@include mobile {
 		bottom: 5px;
