@@ -12,7 +12,6 @@ const initForm = () => {
 	const buttonSize = rightWrapper.querySelector('[data-size-button]');
 	const buttonColor = rightWrapper.querySelector('[data-color-button]');
 
-
 	rightWrapper.addEventListener('click', (event) => {
 		if (event.target === buttonFilter) {
 			catalogForm.classList.add('setting__form-form--active');

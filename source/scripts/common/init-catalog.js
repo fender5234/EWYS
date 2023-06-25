@@ -2,7 +2,7 @@ const initCatalogList = () => {
 	const catalogList = document.querySelector('[data-catalog-list]');
 	if (!catalogList) {
 		return;
-	};
+	}
 
 	const catalogButtons = document.querySelectorAll('[data-catalog-button]');
 	const allLists = catalogList.querySelectorAll('UL');

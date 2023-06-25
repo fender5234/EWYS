@@ -1,87 +1,138 @@
 {% extends '../main.twig' %}
 {% block main %}
 	<main class="page">
-		<div class="container">
-			<div class="breadcrumbs-wrapper">
-				<ul class="breadcrumbs-list">
-					<li class="breadcrumbs-list__item">
-						<a href="/index" class="breadcrums-list__link">Главная</a>
-					</li>
-					<li class="breadcrumbs-list__item">
-						<a class="breadcrums-list__link">Женская одежда</a>
-					</li>
-					<li class="breadcrumbs-list__item">
-						<a class="breadcrums-list__link">Головные уборы</a>
-					</li>
-					<li class="breadcrumbs-list__item">
-						<a class="breadcrums-list__link">Панамы</a>
-					</li>
-					<li class="breadcrumbs-list__item">
-						<a class="breadcrums-list__link breadcrums-list__link--current">Панама женская летняя</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<section class="product">
 			<div class="product__container container">
-				<div class="product__image-container">
-					{# <section id="thumbnail-carousel" class="" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide">
-									<img src="https://placehold.jp/fa0000/e60000/150x150.png" alt="">
-								</li>
-								<li class="splide__slide">
-									<img src="https://placehold.jp/c400fa/e60000/150x150.png" alt="">
-								</li>
-								<li class="splide__slide">
-									<img src="https://placehold.jp/04ff00/e60000/150x150.png" alt="">
-								</li>
-							</ul>
-						</div>
-					</section> #}
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="/index" class="breadcrums-list__link">Главная</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link">Женская одежда</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#"  class="breadcrums-list__link">Головные уборы</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#"  class="breadcrums-list__link">Панамы</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#"  class="breadcrums-list__link breadcrums-list__link--current">Панама женская летняя</a>
+						</li>
+					</ul>
 				</div>
-				<div class="product__setting">
-					<h2 class="product__title">
-						Панама женская летняя
-					</h2>
-					<p class="product__articul">
-						Арт.: 03982
-					</p>
-					<p class="product__price">
-						474 ₽
-					</p>
-					<div class="product__color">
-						<section class="splide color-splide">
-							<div class="splide__track color-splide__track">
-								<ul class="splide__list color-splide__list">
-									<li class="splide__slide color-splide__item color-splide__item--1"></li>
-									<li class="splide__slide color-splide__item color-splide__item--2"></li>
-									<li class="splide__slide color-splide__item color-splide__item--3"></li>
+				<div class="product__wrapper">
+					<div class="product__image-container">
+						<section id="thumbnail-carousel" class="splide product__splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+							<div class="splide__track">
+								<ul class="splide__list product__image-splide-list">
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image1.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image2.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image3.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image4.webp" width="100" height="120" alt="">
+									</li>
+								</ul>
+							</div>
+							<div class="splide__arrows">
+								<button class="splide__arrow splide__arrow--prev product__arrow--prev"></button>
+								<button class="splide__arrow splide__arrow--next product__arrow--next"></button>
+							</div>
+						</section>
+						<section class="splide" id="main-carousel">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image1.webp" width="440" height="480" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image2.webp" width="440" height="480" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image3.webp" width="440" height="480" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image4.webp" width="440" height="480" alt="">
+									</li>
 								</ul>
 							</div>
 						</section>
 					</div>
-					<div class="product__size"></div>
-					<ul class="product__advantages-list">
-						<li class="product__advantages-list-item">
-							<span class="product__advantages-text">Доставка по России и странам СНГ</span>
-						</li>
-						<li class="product__advantages-list-item">
-							<span class="product__advantages-text">Все виды упаковок для товаров</span>
-						</li>
-						<li class="product__advantages-list-item">
-							<span class="product__advantages-text">Сертифицированный товар</span>
-						</li>
-					</ul>
-					<div class="product__buttons">
-						<div class="product__scope">
-							<button class="product__scope-button" type="button"></button>
-							<span class="product__scope-quantity">10</span>
-							<button class="product__scope-button product__scope-button--plus" type="button"></button>
+					<div class="product__setting">
+						<h2 class="product__title">
+							Панама женская летняя
+						</h2>
+						<p class="product__articul">
+							Арт.: 03982
+						</p>
+						<p class="product__price">
+							474 ₽
+						</p>
+						<div class="product__color">
+							<section class="splide color-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Цвет:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1"><input class="product__color-input product__color-input--1" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--2"><input class="product__color-input product__color-input--2" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--3"><input class="product__color-input product__color-input--3" type="radio" name="product-color"></li>
+									</ul>
+								</div>
+							</section>
 						</div>
-						<button class="product__buttons-defer" type="button">В корзину</button>
-						<a href="#" class="product__buttons-link">Заказать образец</a>
+						<div class="product__size">
+							<section class="splide size-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Размер:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize1"><label class="product__size-label" for="productSize1">46-48</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--2">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize2"><label class="product__size-label" for="productSize2">48-50</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--3">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize3"><label class="product__size-label" for="productSize3">50-52</label>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<ul class="product__advantages-list">
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Доставка по России и странам СНГ</span>
+							</li>
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Все виды упаковок для товаров</span>
+							</li>
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Сертифицированный товар</span>
+							</li>
+						</ul>
+						<div class="product__buttons">
+							<div class="product__scope">
+								<button class="product__scope-button" type="button"></button>
+								<span class="product__scope-quantity">10</span>
+								<button class="product__scope-button product__scope-button--plus" type="button"></button>
+							</div>
+							<button class="product__buttons-defer" type="button">В корзину</button>
+							<a href="#" class="product__buttons-link">Заказать образец</a>
+						</div>
 					</div>
 				</div>
 				<div class="product__tabs">

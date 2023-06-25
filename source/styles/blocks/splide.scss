@@ -114,26 +114,24 @@
 	display: block;
 }
 .splide__arrow {
+	background-color: transparent;
 	align-items: center;
-	background: #ccc;
 	border: 0;
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
-	height: 2em;
+	height: 20px;
 	justify-content: center;
 	opacity: 0.7;
 	padding: 0;
 	position: absolute;
-	top: 50%;
 	transform: translateY(-50%);
-	width: 2em;
+	width: 20px;
 	z-index: 1;
 }
 .splide__arrow svg {
-	fill: #000;
-	height: 1.2em;
-	width: 1.2em;
+	height: 20px;
+	width: 20px;
 }
 .splide__arrow:hover:not(:disabled) {
 	opacity: 0.9;
@@ -146,13 +144,15 @@
 	outline-offset: 3px;
 }
 .splide__arrow--prev {
-	left: 1em;
+	left: -20px;
+	background-image: url("../images/sprite.svg#chevron-left");
 }
 .splide__arrow--prev svg {
 	transform: scaleX(-1);
 }
 .splide__arrow--next {
-	right: 1em;
+	right: -20px;
+	background-image: url("../images/sprite.svg#chevron-right");
 }
 .splide.is-focus-in .splide__arrow:focus {
 	outline: 3px solid #0bf;
@@ -217,11 +217,7 @@
 	outline-offset: 3px;
 }
 .splide__track--nav > .splide__list > .splide__slide {
-	border: 3px solid transparent;
 	cursor: pointer;
-}
-.splide__track--nav > .splide__list > .splide__slide.is-active {
-	border: 3px solid #000;
 }
 .splide__arrows--rtl .splide__arrow--prev {
 	left: auto;
