@@ -1,7 +1,7 @@
 .promo__wrapper {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	padding: 60px 0 0 15px;
+	padding: 60px 0 0;
 
 	@include mobile {
 		display: block;

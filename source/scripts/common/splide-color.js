@@ -9,7 +9,7 @@ const splideProductInputInit = () => {
 		pagination: false,
 		perPage: 3,
 		type: 'loop',
-		width: '270px',
+		width: '270px'
 	});
 	splideColorInput.mount();
 
@@ -21,7 +21,7 @@ const splideProductInputInit = () => {
 		pagination: false,
 		perPage: 3,
 		type: 'loop',
-		width: '270px',
+		width: '270px'
 	});
 	splideSizeInput.mount();
 
@@ -30,7 +30,7 @@ const splideProductInputInit = () => {
 		arrows: false,
 		pagination: false,
 		rewind: true,
-		type: 'fade',
+		type: 'fade'
 	});
 
 	const splideImage = document.querySelector('#thumbnail-carousel');
@@ -43,9 +43,9 @@ const splideProductInputInit = () => {
 		isNavigation: true,
 		pagination: false,
 		perPage: 3,
-		rewind: true,
+		rewind: true
 	});
-	splideMainImageSplide .sync( splideImageSplide );
+	splideMainImageSplide.sync(splideImageSplide);
 	splideMainImageSplide.mount();
 	splideImageSplide.mount();
 };

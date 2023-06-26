@@ -1,0 +1,138 @@
+.cart__title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 38px;
+	font-family: "Lato-Semibold", sans-serif;
+}
+
+.cart__goods-wrapper-item {
+	display: grid;
+	grid-template-columns: 57% 1fr 1fr 1fr;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.card__text {
+	font-size: 16px;
+	line-height: 140%;
+	color: $color-gray;
+}
+
+.cart__button-delete {
+	align-self: center;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-image: url("../images/sprite.svg#goods-del");
+	border: none;
+	cursor: pointer;
+}
+
+.cart__image-goods {
+	min-width: 70px;
+	min-height: 90px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.cart__good-title {
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.cart__good-link {
+	display: block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Lato-Semibold", sans-serif;
+	text-decoration: none;
+	color: $color-gray;
+}
+
+.card__good-card {
+	display: flex;
+}
+
+.cart__goods-wrapper {
+	display: grid;
+	grid-template-columns: 770px 1fr;
+	grid-gap: 0 30px;
+}
+
+.cart__good-text {
+	padding: 10px 20px 0;
+}
+
+.card__good-bold {
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Lato-Semibold", sans-serif;
+}
+
+.cart__good-prop {
+	margin-right: 20px;
+}
+
+.cart__good-price {
+	align-self: center;
+	font-size: 16px;
+	font-family: "Montserrat-Regular", sans-serif;
+	color: rgba(51, 51, 51, 0.8);
+
+	&--all-score {
+		margin-left: 8px;
+		font-size: 14px;
+		font-family: "Lato-Regular", sans-serif;
+	}
+}
+
+.cart__goood-all-price {
+	align-self: center;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "Montserrat-SemiBold", serif;
+
+	&--all-score {
+		margin-left: 150px;
+	}
+}
+
+.cart__submit-button-wrapper {
+	box-sizing: border-box;
+	max-width: 370px;
+	padding: 20px;
+	background-color: $color-white;
+	border-radius: 6px;
+	box-shadow: 0 0 15px 0 rgba(51, 51, 51, 0.15);
+}
+
+.cart__submit-button {
+	display: block;
+	width: 330px;
+	margin: 0 auto;
+	padding: 9px 10px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: "Lato-Semibold", sans-serif;
+	color: $color-white;
+	background-color: $color-green;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 0 15px 0 rgba(93, 218, 4, 0.25);
+	}
+}
+
+.cart__all-score {
+	margin: 0 0 35px;
+	padding: 0;
+	font-size: 16px;
+	line-height: 140%;
+	font-family: "Lato-Regular", sans-serif;
+}

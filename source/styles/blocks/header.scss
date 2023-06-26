@@ -19,7 +19,7 @@
 .header__nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 4px 10px 4px 14px;
+	padding: 4px 0;
 
 	@include mobile {
 		display: none;
@@ -64,7 +64,7 @@
 .header__navbar {
 	display: flex;
 	align-items: center;
-	padding: 11px 11px 1px 15px;
+	padding: 11px 0 0;
 	font-family: "Lato-Regular", sans-serif;
 
 	@include mobile {

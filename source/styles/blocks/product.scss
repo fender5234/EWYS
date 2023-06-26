@@ -94,6 +94,7 @@
 	font-size: 24px;
 	font-family: "Lato-Semibold", sans-serif;
 	color: $color-gray;
+	cursor: pointer;
 }
 
 .product__title {
@@ -334,13 +335,13 @@
 
 .product__arrow--prev {
 	top: 0 !important;
-	left: 39px !important;
+	left: 40px !important;
 	transform: rotate(90deg) !important;
 }
 
 .product__arrow--next {
-	bottom: 1px !important;
-	left: 39px !important;
+	bottom: 18px !important;
+	left: 40px !important;
 	transform: rotate(90deg) !important;
 }
 
@@ -354,4 +355,10 @@
 
 .product__buttons {
 	display: flex;
+}
+
+.product__card-button-list {
+	top: 21px;
+	right: auto;
+	left: 291px;
 }

@@ -1,0 +1,105 @@
+{% extends '../main.twig' %}
+{% block main %}
+	<main class="page">
+		<section class="cart">
+			<div class="cart__container container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="/index" class="breadcrums-list__link">Главная</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link breadcrums-list__link--current">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<h2 class="cart__title">
+					Корзина
+				</h2>
+				<form class="cart__goods-wrapper">
+					<div class="cart__wrapper-left">
+						<div class="cart__goods-wrapper-item">
+							<span class="card__text">
+								Товар
+							</span>
+							<span class="card__text">
+								Цена
+							</span>
+							<span class="card__text">
+								Количество
+							</span>
+							<span class="card__text">
+								Подитог
+							</span>
+						</div>
+						<div class="cart__goods-wrapper-item">
+							<div class="card__good-card">
+								<button class="cart__button-delete" type="button"></button>
+								<div class="card__good-image">
+									<a href="#">
+										<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
+									</a>
+								</div>
+								<div class="cart__good-text">
+									<h2 class="cart__good-title">
+										<a href="#" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+									</h2>
+									<span class="cart__good-prop">Цвет:<span class="card__good-bold">Черный</span>
+									</span>
+									<span class="cart__good-prop">Размер:<span class="card__good-bold">50-52</span>
+									</span>
+								</div>
+							</div>
+							<span class="cart__good-price">474 ₽</span>
+							<div class="product__buttons">
+								<div class="product__scope">
+									<button class="product__scope-button" type="button"></button>
+									<span class="product__scope-quantity">10</span>
+									<button class="product__scope-button product__scope-button--plus" type="button"></button>
+								</div>
+							</div>
+							<span class="cart__goood-all-price">4740 ₽</span>
+						</div>
+						<div class="cart__goods-wrapper-item">
+							<div class="card__good-card">
+								<button class="cart__button-delete" type="button"></button>
+								<div class="card__good-image">
+									<a href="#">
+										<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
+									</a>
+								</div>
+								<div class="cart__good-text">
+									<h2 class="cart__good-title">
+										<a href="#" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+									</h2>
+									<span class="cart__good-prop">Цвет:<span class="card__good-bold">Розовый</span>
+									</span>
+									<span class="cart__good-prop">Размер:<span class="card__good-bold">50-52</span>
+									</span>
+								</div>
+							</div>
+							<span class="cart__good-price">474 ₽</span>
+							<div class="product__buttons">
+								<div class="product__scope">
+									<button class="product__scope-button" type="button"></button>
+									<span class="product__scope-quantity">10</span>
+									<button class="product__scope-button product__scope-button--plus" type="button"></button>
+								</div>
+							</div>
+							<span class="cart__goood-all-price">4740 ₽</span>
+						</div>
+					</div>
+					<div class="cart__wrapper-right">
+						<div class="cart__submit-button-wrapper">
+							<p class="cart__all-score">Итого
+								<span class="cart__good-price cart__good-price--all-score">(3 товара)</span>
+								<span class="cart__goood-all-price cart__goood-all-price--all-score">5740 ₽</span>
+							</p>
+							<button class="cart__submit-button" type="submit">Оформить заказ</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>{% endblock %}

@@ -259,3 +259,13 @@
 	right: 0.5em;
 	top: 0;
 }
+
+.splide__slide.is-active {
+	position: relative;
+
+	&:hover {
+		.product__card-button-list {
+			display: block;
+		}
+	}
+}
