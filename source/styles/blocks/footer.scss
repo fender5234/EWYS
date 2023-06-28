@@ -17,6 +17,11 @@
 	grid-column: 2/3;
 	padding: 59px 115px 0;
 
+	@include tablet {
+		margin: 0 auto;
+		padding: 20px;
+	}
+
 	@include mobile {
 		padding: 20px 20px 115px;
 	}
@@ -28,6 +33,10 @@
 	justify-content: space-between;
 	padding: 59px 186px 0 15px;
 	border-right: 1px solid rgba(173, 173, 173, 0.2);
+
+	@include tablet {
+		padding: 20px;
+	}
 
 	@include mobile {
 		flex-direction: column;
@@ -105,7 +114,8 @@
 	padding: 0;
 	font-weight: 600;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 20px;
+	font-family: "Lato-Semibold", sans-serif;
 	color: $color-white;
 }
 

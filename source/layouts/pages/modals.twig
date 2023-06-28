@@ -1,0 +1,39 @@
+{% extends '../main.twig' %}
+{% block main %}
+	<main class="page">
+		<div class="modal">
+			<div class="cart-modal__container modal__container">
+				<button class="modal__button-close"></button>
+				<div class="cart-modal__wrapper modal__wrapper"></div>
+				<div class="cart__goods-wrapper-item cart__goods-wrapper-item--modal">
+					<div class="card__good-card card__good-card--modal">
+						<button class="cart__button-delete" type="button"></button>
+						<div class="card__good-image">
+							<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
+						</div>
+						<div class="cart__good-text">
+							<h2 class="cart__good-title">
+								<a href="/product" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+							</h2>
+							<span class="cart__good-prop">Цвет:<span class="card__good-bold">Черный</span>
+							</span>
+							<span class="cart__good-prop">Размер:<span class="card__good-bold">50-52</span>
+							</span>
+						</div>
+					</div>
+					<div class="cart__good-bottom-modal">
+						<span class="cart__good-price cart__good-price--modal">474 ₽</span>
+						<div class="product__buttons">
+							<div class="product__scope">
+								<button class="product__scope-button" type="button"></button>
+								<span class="product__scope-quantity">10</span>
+								<button class="product__scope-button product__scope-button--plus" type="button"></button>
+							</div>
+						</div>
+						<span class="cart__goood-all-price cart__goood-all-price--modal">4740 ₽</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}

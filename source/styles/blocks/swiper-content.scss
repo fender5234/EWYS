@@ -3,6 +3,11 @@
 	background-position: center;
 	background-size: 100%;
 
+	@include tablet {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	&--one {
 		background-image: url("../images/banner-1.webp");
 	}

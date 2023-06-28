@@ -21,6 +21,10 @@
 	justify-content: space-between;
 	padding: 4px 0;
 
+	@include tablet {
+		padding: 4px 20px;
+	}
+
 	@include mobile {
 		display: none;
 	}
@@ -66,6 +70,10 @@
 	align-items: center;
 	padding: 11px 0 0;
 	font-family: "Lato-Regular", sans-serif;
+
+	@include tablet {
+		padding: 11px 20px 0;
+	}
 
 	@include mobile {
 		padding: 9px 20px 10px;
@@ -114,6 +122,10 @@
 	&--favorite {
 		position: relative;
 
+		@include tablet {
+			margin-left: 10px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -152,6 +164,10 @@
 	background-color: $color-green;
 	border-radius: 6px;
 
+	@include tablet {
+		margin: 0 10px;
+	}
+
 	&:hover,
 	&:active {
 		filter: drop-shadow(0 0 15px rgba(93, 218, 4, 0.2));
@@ -189,6 +205,12 @@
 	display: flex;
 	flex-grow: 1;
 
+	@include tablet {
+		flex-grow: 0;
+		width: 100%;
+		margin-right: auto;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -217,6 +239,10 @@
 	font-family: "Lato-Regular", sans-serif;
 	border: 1px solid rgba(51, 51, 51, 0.1);
 	border-radius: 6px;
+
+	@include tablet {
+		max-width: none;
+	}
 }
 
 .header__navbar-link-span {

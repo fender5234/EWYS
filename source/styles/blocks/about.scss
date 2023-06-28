@@ -1,6 +1,10 @@
 .about__container {
 	padding: 72px 0 0 30px;
 
+	@include tablet {
+		padding: 20px;
+	}
+
 	@include mobile {
 		padding: 0 0 34px;
 	}
@@ -32,6 +36,11 @@
 	width: 41px;
 	height: 41px;
 	margin-top: -5px;
+
+	@include tablet {
+		width: 30px;
+		height: 30px;
+	}
 }
 
 .about__list {
@@ -74,6 +83,12 @@
 	font-family: "Montserrat-Regular", serif;
 	color: $color-gray;
 
+	@include tablet {
+		margin: 0 5px 0 0;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
 	@include mobile {
 		margin: 0 -4px 15px 0;
 		font-size: 24px;
@@ -88,8 +103,13 @@
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Lato-Regular", sans-serif;
+	color: $color-gray;
 
 	@include mobile {
 		padding: 0 20px;
 	}
+}
+
+.about__wrapper {
+	visibility: visible;
 }

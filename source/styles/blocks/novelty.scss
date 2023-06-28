@@ -1,6 +1,10 @@
 .novelty-card-containter {
 	padding: 43px 0 95px;
 
+	@include tablet {
+		padding: 43px 20px;
+	}
+
 	@include mobile {
 		padding: 20px 10px 33px;
 	}

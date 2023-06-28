@@ -1,6 +1,82 @@
 {% extends '../main.twig' %}
 {% block main %}
 	<main class="page">
+		{# <div class="modal">
+			<div class="product-modal__container modal__container">
+				<button class="modal__button-close"></button>
+				<div class="product-modal__wrapper modal__wrapper">
+					<div class="product-modal__image-wrapper modal__image-wrapper">
+						<img class="product-modal__image modal__image" src="./images/product-image1.webp" width="440" height="480" alt="">
+						<ul class="card-buttons-list product__card-button-list">
+							<li class="card-buttons-item">
+								<label class="card-buttons-label">
+									<span class="card-button-note card__quick-wiev">В избранное</span>
+									<button type="button" class="card-button card-button--favorite"></button>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="product__setting">
+						<h2 class="product__title">
+							Панама женская летняя
+						</h2>
+						<p class="product__articul">
+							Арт.: 03982
+						</p>
+						<p class="product__price">
+							474 ₽
+						</p>
+						<div class="product__color">
+							<section class="splide color-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Цвет:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1"><input class="product__color-input product__color-input--1" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--2"><input class="product__color-input product__color-input--2" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--3"><input class="product__color-input product__color-input--3" type="radio" name="product-color"></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="product__size product__size-modal">
+							<section class="splide size-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Размер:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize1"><label class="product__size-label" for="productSize1">46-48</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--2">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize2"><label class="product__size-label" for="productSize2">48-50</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--3">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize3"><label class="product__size-label" for="productSize3">50-52</label>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="product__buttons">
+							<div class="product__scope">
+								<button class="product__scope-button" type="button"></button>
+								<span class="product__scope-quantity">10</span>
+								<button class="product__scope-button product__scope-button--plus" type="button"></button>
+							</div>
+							<button class="product__buttons-defer" type="button">В корзину</button>
+							<a href="#" class="product__buttons-link">Заказать образец</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> #}
 		<div class="swiper-container container">
 			<div class="swiper">
 				<div class="swiper-wrapper">
@@ -134,9 +210,9 @@
 							<span class="card__position-span">
 								<span class="card-grade">Качество подтверждено</span>
 							</span>
-							<h3 class="card-title">Панама женская
-								<br>
-								и мужская летняя весенняя</h3>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Панама женская и мужская летняя весенняя</a>
+							</h3>
 							<div class="card-note">
 								<span class="card-articul">Арт.: 03982</span>
 								<div class="card__price-wrapper">
@@ -172,7 +248,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Бейсболка женская, кепка мужская демисезон</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Бейсболка женская, кепка мужская демисезон</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 140157564</span>
 						<div class="card__price-wrapper">
@@ -206,7 +284,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Нижнее белье женское комплект бесшовный в рубчик.</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Нижнее белье женское комплект бесшовный в рубчик.</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 144957662</span>
 						<div class="card__price-wrapper">
@@ -240,7 +320,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Рюкзак женский мужской школьный детский черный</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Рюкзак женский мужской школьный детский черный.</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 157295287</span>
 						<div class="card__price-wrapper">
@@ -331,7 +413,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="novelty">
 		<div class="novelty-card-containter card-containter container">
 			<h2 class="novelty__card-header card-header">
@@ -343,7 +424,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Трусы мужские, плавки, набор боксеров, 4 шт</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Трусы мужские, плавки, набор боксеров, 4 шт.</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: 72302360</span>
 						<span class="card-price">654 ₽</span>
@@ -374,7 +457,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Футболка, плотность 210 гр/м2</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Футболка, плотность 210 гр/м2</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: MF2040/02/K</span>
 						<span class="card-price">280 ₽</span>
@@ -405,7 +490,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Худи без начеса двунитка</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Худи без начеса двунитка</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: MH2000/01</span>
 						<span class="card-price">680 ₽</span>
@@ -436,7 +523,9 @@
 					<span class="card__position-span">
 						<span class="card-grade">Качество подтверждено</span>
 					</span>
-					<h3 class="card-title">Худи с начесом оверсайз унисекс чёрный</h3>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Худи с начесом оверсайз унисекс чёрный</a>
+					</h3>
 					<div class="card-note">
 						<span class="card-articul">Арт.: Н/Д</span>
 						<span class="card-price">930 ₽</span>
@@ -479,7 +568,7 @@
 				</div>
 				<div class="mentors__wrapper-item-form">
 					<section class="mentors__form">
-						<form action="http://foo.com" class="form">
+						<form action="https://echo.htmlacademy.ru/courses" class="form">
 							<label class="form__label">
 								<span class="mentors-form__span form__span">Фамилия Имя</span><input class="mentors-form__input form__input" type="text" name="name" placeholder="Иван Иванов"></label>
 							<label class="form__label">

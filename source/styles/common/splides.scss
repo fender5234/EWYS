@@ -11,10 +11,10 @@
 	margin: 0 !important;
 	padding: 0 !important;
 }
-.splide.is-initialized:not(.is-active) .splide__list {
-	display: block;
-}
+
 .splide__pagination {
+	position: absolute;
+	bottom: -30px;
 	-ms-flex-align: center;
 	align-items: center;
 	display: -ms-flexbox;

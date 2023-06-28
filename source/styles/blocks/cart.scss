@@ -3,6 +3,11 @@
 	font-size: 32px;
 	line-height: 38px;
 	font-family: "Lato-Semibold", sans-serif;
+
+	@include mobile {
+		margin: 0;
+		padding: 0 20px;
+	}
 }
 
 .cart__goods-wrapper-item {
@@ -10,6 +15,16 @@
 	grid-template-columns: 57% 1fr 1fr 1fr;
 	padding: 20px 0;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+
+	&--title {
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&--modal {
+		display: block;
+	}
 }
 
 .card__text {
@@ -19,6 +34,7 @@
 }
 
 .cart__button-delete {
+	z-index: 2;
 	align-self: center;
 	width: 40px;
 	height: 40px;
@@ -48,10 +64,16 @@
 	font-family: "Lato-Semibold", sans-serif;
 	text-decoration: none;
 	color: $color-gray;
-}
 
-.card__good-card {
-	display: flex;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
 }
 
 .cart__goods-wrapper {
@@ -62,14 +84,6 @@
 
 .cart__good-text {
 	padding: 10px 20px 0;
-}
-
-.card__good-bold {
-	margin-left: 10px;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 20px;
-	font-family: "Lato-Semibold", sans-serif;
 }
 
 .cart__good-prop {
@@ -87,6 +101,10 @@
 		font-size: 14px;
 		font-family: "Lato-Regular", sans-serif;
 	}
+
+	&--modal {
+		margin-right: 30px;
+	}
 }
 
 .cart__goood-all-price {
@@ -97,6 +115,10 @@
 
 	&--all-score {
 		margin-left: 150px;
+	}
+
+	&--modal {
+		color: $color-green;
 	}
 }
 
@@ -135,4 +157,19 @@
 	font-size: 16px;
 	line-height: 140%;
 	font-family: "Lato-Regular", sans-serif;
+}
+
+.card__link {
+	text-decoration: none;
+}
+
+.cart-modal__container {
+	max-width: 505px;
+	margin: 0 0 0 auto;
+	padding: 140px 20px;
+}
+
+.cart__good-bottom-modal {
+	display: flex;
+	justify-content: center;
 }

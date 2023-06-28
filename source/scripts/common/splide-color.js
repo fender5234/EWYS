@@ -2,6 +2,9 @@ import Splide from '@splidejs/splide';
 
 const splideProductInputInit = () => {
 	const splideColor = document.querySelector('.color-splide');
+	if (!splideColor) {
+		return;
+	}
 	const splideColorInput = new Splide(splideColor, {
 		arrows: true,
 		fixedHeight: '40px',
@@ -12,7 +15,6 @@ const splideProductInputInit = () => {
 		width: '270px'
 	});
 	splideColorInput.mount();
-
 	const splideSize = document.querySelector('.size-splide');
 	const splideSizeInput = new Splide(splideSize, {
 		arrows: true,
@@ -24,7 +26,6 @@ const splideProductInputInit = () => {
 		width: '270px'
 	});
 	splideSizeInput.mount();
-
 	const splideMainImage = document.querySelector('#main-carousel');
 	const splideMainImageSplide = new Splide(splideMainImage, {
 		arrows: false,
@@ -32,7 +33,6 @@ const splideProductInputInit = () => {
 		rewind: true,
 		type: 'fade'
 	});
-
 	const splideImage = document.querySelector('#thumbnail-carousel');
 	const splideImageSplide = new Splide(splideImage, {
 		direction: 'ttb',

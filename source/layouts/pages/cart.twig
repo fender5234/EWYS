@@ -9,16 +9,16 @@
 							<a href="/index" class="breadcrums-list__link">Главная</a>
 						</li>
 						<li class="breadcrumbs-list__item">
-							<a href="#" class="breadcrums-list__link breadcrums-list__link--current">Корзина</a>
+							<a href="/cart" class="breadcrums-list__link breadcrums-list__link--current">Корзина</a>
 						</li>
 					</ul>
 				</div>
 				<h2 class="cart__title">
 					Корзина
 				</h2>
-				<form class="cart__goods-wrapper">
+				<form action="https://echo.htmlacademy.ru/courses" class="cart__goods-wrapper">
 					<div class="cart__wrapper-left">
-						<div class="cart__goods-wrapper-item">
+						<div class="cart__goods-wrapper-item cart__goods-wrapper-item--title">
 							<span class="card__text">
 								Товар
 							</span>
@@ -36,13 +36,11 @@
 							<div class="card__good-card">
 								<button class="cart__button-delete" type="button"></button>
 								<div class="card__good-image">
-									<a href="#">
-										<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
-									</a>
+									<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
 								</div>
 								<div class="cart__good-text">
 									<h2 class="cart__good-title">
-										<a href="#" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+										<a href="/product" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
 									</h2>
 									<span class="cart__good-prop">Цвет:<span class="card__good-bold">Черный</span>
 									</span>
@@ -50,27 +48,26 @@
 									</span>
 								</div>
 							</div>
-							<span class="cart__good-price">474 ₽</span>
-							<div class="product__buttons">
-								<div class="product__scope">
-									<button class="product__scope-button" type="button"></button>
-									<span class="product__scope-quantity">10</span>
-									<button class="product__scope-button product__scope-button--plus" type="button"></button>
+
+								<span class="cart__good-price">474 ₽</span>
+								<div class="product__buttons">
+									<div class="product__scope">
+										<button class="product__scope-button" type="button"></button>
+										<span class="product__scope-quantity">10</span>
+										<button class="product__scope-button product__scope-button--plus" type="button"></button>
+									</div>
 								</div>
-							</div>
-							<span class="cart__goood-all-price">4740 ₽</span>
+								<span class="cart__goood-all-price">4740 ₽</span>
 						</div>
 						<div class="cart__goods-wrapper-item">
 							<div class="card__good-card">
 								<button class="cart__button-delete" type="button"></button>
 								<div class="card__good-image">
-									<a href="#">
-										<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
-									</a>
+									<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
 								</div>
 								<div class="cart__good-text">
 									<h2 class="cart__good-title">
-										<a href="#" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+										<a href="/product" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
 									</h2>
 									<span class="cart__good-prop">Цвет:<span class="card__good-bold">Розовый</span>
 									</span>
@@ -78,15 +75,16 @@
 									</span>
 								</div>
 							</div>
-							<span class="cart__good-price">474 ₽</span>
-							<div class="product__buttons">
-								<div class="product__scope">
-									<button class="product__scope-button" type="button"></button>
-									<span class="product__scope-quantity">10</span>
-									<button class="product__scope-button product__scope-button--plus" type="button"></button>
+								<span class="cart__good-price">474 ₽</span>
+								<div class="product__buttons">
+									<div class="product__scope">
+										<button class="product__scope-button" type="button"></button>
+										<span class="product__scope-quantity">10</span>
+										<button class="product__scope-button product__scope-button--plus" type="button"></button>
+									</div>
 								</div>
-							</div>
-							<span class="cart__goood-all-price">4740 ₽</span>
+								<span class="cart__goood-all-price">4740 ₽</span>
+
 						</div>
 					</div>
 					<div class="cart__wrapper-right">
@@ -99,7 +97,147 @@
 						</div>
 					</div>
 				</form>
+				<div class="card-containter container">
+					<h2 class="card-header">
+						Новинки
+					</h2>
+					<div class="card-wrapper">
+						<div class="card-item">
+							<img src="./images/underpants.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Трусы мужские, плавки, набор боксеров, 4 шт.</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 72302360</span>
+								<span class="card-price">654 ₽</span>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item">
+							<img src="./images/t-shirt.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Футболка, плотность 210 гр/м2</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: MF2040/02/K</span>
+								<span class="card-price">280 ₽</span>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item card-item--mobile-hidden">
+							<img src="./images/hoodie.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Худи без начеса двунитка</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: MH2000/01</span>
+								<span class="card-price">680 ₽</span>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item card-item--mobile-hidden">
+							<img src="./images/hoodie-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Худи с начесом оверсайз унисекс чёрный</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: Н/Д</span>
+								<span class="card-price">930 ₽</span>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="card-link">Все товары</a>
+				</div>
 			</div>
 		</div>
-	</section>
-</main>{% endblock %}
+	</div>
+</div></section></main>{% endblock %}

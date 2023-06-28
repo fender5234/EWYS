@@ -3,6 +3,11 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 
+	@include tablet {
+		background-position: 88% 50%;
+		background-size: cover;
+	}
+
 	@include mobile {
 		background-image: url("../images/mentors-mini.webp");
 		background-size: cover;
@@ -46,6 +51,12 @@
 	grid-template-columns: repeat(3, 1fr);
 	padding: 40px 0 40px 16px;
 
+	@include tablet {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 10px;
+		padding: 80px 20px;
+	}
+
 	@include mobile {
 		display: flex;
 		flex-direction: column;
@@ -56,6 +67,10 @@
 .mentors__wrapper-item-form {
 	grid-column: 2/3;
 	padding: 68px 0 0 5px;
+
+	@include tablet {
+		padding: 0;
+	}
 
 	@include mobile {
 		padding: 20px 0 0;
@@ -68,6 +83,7 @@
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 38px;
+	font-family: "Lato-Semibold", sans-serif;
 	color: $color-gray;
 
 	@include mobile {
@@ -78,10 +94,18 @@
 .mentor__text {
 	font-size: 12px;
 	line-height: 16px;
+
+	@include tablet {
+		font-size: 14px;
+	}
 }
 
 .mentors-form__label {
 	&--checkbox {
 		padding-top: 6px;
+
+		@include tablet {
+			color: $color-gray;
+		}
 	}
 }
