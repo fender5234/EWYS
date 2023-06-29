@@ -85,7 +85,7 @@
 								Подитог
 							</span>
 						</div>
-						<div class="cart__goods-wrapper-item">
+						<div class="cart__goods-wrapper-item cart__goods-wrapper-item--goods">
 							<div class="card__good-card">
 								<button class="cart__button-delete" type="button"></button>
 								<div class="card__good-image">
@@ -101,7 +101,7 @@
 									</span>
 								</div>
 							</div>
-
+							<div class="cart__bottom-mobile-wrapper">
 								<span class="cart__good-price">474 ₽</span>
 								<div class="product__buttons">
 									<div class="product__scope">
@@ -110,9 +110,10 @@
 										<button class="product__scope-button product__scope-button--plus" type="button"></button>
 									</div>
 								</div>
-								<span class="cart__goood-all-price">4740 ₽</span>
+								<span class="cart__good-all-price">4740 ₽</span>
+							</div>
 						</div>
-						<div class="cart__goods-wrapper-item">
+						<div class="cart__goods-wrapper-item cart__goods-wrapper-item--goods">
 							<div class="card__good-card">
 								<button class="cart__button-delete" type="button"></button>
 								<div class="card__good-image">
@@ -128,6 +129,7 @@
 									</span>
 								</div>
 							</div>
+							<div class="cart__bottom-mobile-wrapper">
 								<span class="cart__good-price">474 ₽</span>
 								<div class="product__buttons">
 									<div class="product__scope">
@@ -136,8 +138,8 @@
 										<button class="product__scope-button product__scope-button--plus" type="button"></button>
 									</div>
 								</div>
-								<span class="cart__goood-all-price">4740 ₽</span>
-
+								<span class="cart__good-all-price">4740 ₽</span>
+							</div>
 						</div>
 					</div>
 					<div class="cart__wrapper-right">
@@ -150,7 +152,7 @@
 						</div>
 					</div>
 				</form>
-				<div class="card-containter container">
+				<div class="card-containter container cart__card-containter">
 					<h2 class="card-header">
 						Новинки
 					</h2>
