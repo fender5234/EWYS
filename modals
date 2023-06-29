@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My app</title>
+		<meta name="description" content="My project">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="visually-hidden">
+				Оптовый онлайн магазин EWYS
+			</h1>
+			<div class="header__section header__section--color" id="top">
+				<div class="header__container-top container">
+					<nav class="header__nav">
+						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
+						<ul class="header__nav-list">
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="/contacts">Контакты</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Прайс-лист</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Заказать образец</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__section">
+				<div class="header__container-bottom container">
+					<div class="header__navbar">
+						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
+						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
+							<span class="header__navbar-link-span">Каталог</span>
+						</a>
+						<label class="header__search-label">
+							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
+						</label>
+						<a class="header__navbar-link header__navbar-link--favorite" href="#">
+							<span></span>
+							<span class="header__navbar-link-span">Избранное</span>
+						</a>
+						<a class="header__navbar-link header__navbar-link--by" href="/cart">
+							<span class="header__navbar-link-span">Корзина</span>
+						</a>
+					</div>
+					
+				</div>
+			</body>
+		</body>
+	</body>
+</html></header>	<main class="page">
+		<div class="modal">
+			<div class="cart-modal__container modal__container">
+				<button class="modal__button-close"></button>
+				<div class="cart-modal__wrapper modal__wrapper"></div>
+				<div class="cart__goods-wrapper-item cart__goods-wrapper-item--modal">
+					<div class="card__good-card card__good-card--modal">
+						<button class="cart__button-delete" type="button"></button>
+						<div class="card__good-image">
+							<img class="cart__image-goods" src="./images/product-image1.webp" alt="Фото Товара" width="70" height="90">
+						</div>
+						<div class="cart__good-text">
+							<h2 class="cart__good-title">
+								<a href="/product" class="cart__good-link">Панама женская и мужская летняя весенняя</a>
+							</h2>
+							<span class="cart__good-prop">Цвет:<span class="card__good-bold">Черный</span>
+							</span>
+							<span class="cart__good-prop">Размер:<span class="card__good-bold">50-52</span>
+							</span>
+						</div>
+					</div>
+					<div class="cart__good-bottom-modal">
+						<span class="cart__good-price cart__good-price--modal">474 ₽</span>
+						<div class="product__buttons">
+							<div class="product__scope">
+								<button class="product__scope-button" type="button"></button>
+								<span class="product__scope-quantity">10</span>
+								<button class="product__scope-button product__scope-button--plus" type="button"></button>
+							</div>
+						</div>
+						<span class="cart__goood-all-price cart__goood-all-price--modal">4740 ₽</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+<footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="https://echo.htmlacademy.ru/courses" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {"page":{"error":"","pageName":"modals","status":""}};</script><script src="scripts/main.js"></script></body></html>

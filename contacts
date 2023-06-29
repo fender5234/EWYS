@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My app</title>
+		<meta name="description" content="My project">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="visually-hidden">
+				Оптовый онлайн магазин EWYS
+			</h1>
+			<div class="header__section header__section--color" id="top">
+				<div class="header__container-top container">
+					<nav class="header__nav">
+						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
+						<ul class="header__nav-list">
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="/contacts">Контакты</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Прайс-лист</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Заказать образец</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__section">
+				<div class="header__container-bottom container">
+					<div class="header__navbar">
+						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
+						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
+							<span class="header__navbar-link-span">Каталог</span>
+						</a>
+						<label class="header__search-label">
+							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
+						</label>
+						<a class="header__navbar-link header__navbar-link--favorite" href="#">
+							<span></span>
+							<span class="header__navbar-link-span">Избранное</span>
+						</a>
+						<a class="header__navbar-link header__navbar-link--by" href="/cart">
+							<span class="header__navbar-link-span">Корзина</span>
+						</a>
+					</div>
+					
+				</div>
+			</body>
+		</body>
+	</body>
+</html></header>	<main class="page">
+		<section class="contacts">
+			<div class="contacts__container container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="/index" class="breadcrums-list__link">Главная</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a class="breadcrums-list__link breadcrums-list__link--current">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contacts__map">
+				<div style="position:relative;overflow:hidden;">
+					<a href="https://yandex.ru/maps/org/ruskotton/72665455780/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Рускоттон</a>
+					<a href="https://yandex.ru/maps/213/moscow/category/clothes_wholesale/184106556/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Одежда оптом в Москве</a>
+					<iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.723064%2C55.658830&mode=search&oid=72665455780&ol=biz&z=14.1" width="100%" height="370" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+				</div>
+			</div>
+			<div class="contacts__container-text container">
+				<div class="contacts__wrapper-text">
+					<h2 class="contacts__title">
+						Контакты
+					</h2>
+					<ul class="contacts__list">
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Адрес</span>
+								г. Москва, 109651, ул. Иловайская 9А, строение 1</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Телефон</span>
+								<a class="contacts__link" href="tel:+79651632465">+7(965)16 32 465</a>
+							</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Telegram</span>
+								<a class="contacts__link" href="https://t.me/ewys_manager">@ewys_manager</a>
+							</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">
+									E-mail
+								</span>
+								<a class="contacts__link" href="mailto:ewys_opt@mail.ru">ewys_opt@mail.ru</a>
+							</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								График работы ежедневно с 9:00 — 18:00. Воскресенье выходной.
+							</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Заезд с улицы Иловайская через КПП, ориентир «Деловые линии». Необходимо в терминале получить талон на въезд — первые 15 минут бесплатно, далее 100р час.</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts__wrapper-text contacts__wrapper-text--right">
+					<h2 class="contacts__title">
+						Реквизиты
+					</h2>
+					<ul class="contacts__list">
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">ОГРН</span>
+								1227700321518</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">ИНН</span>
+								9723155242</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">КПП</span>
+								772301001</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">ОКТМО</span>
+								45393000</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">ОКВЭД</span>
+								46.42</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Р/С</span>
+								46.42</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">БИК</span>
+								044525974</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Банк</span>
+								АО «Тинькофф Банк» г.Москва</p>
+						</li>
+						<li class="contacts__list-item">
+							<p class="contacts__text">
+								<span class="contacts__text-span">Юр.адрес</span>
+								109651, Г.МОСКВА, УЛ ИЛОВАЙСКАЯ, Д. 9А СТР. 1</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="contacts__form-section">
+				<div class="contacts__form-container container">
+					<div class="contacts__form-wrapper">
+						<h3 class="contacts__form-title">
+							Отдел контроля качества
+						</h3>
+						<p class="contacts__form-subtitle">
+							Уважаемые покупатели, если вы заметили отклонения качества продукции или нам стоит обратить внимание на обслуживание, свяжитесь с нами удобным для вас способом или заполните форму ниже.
+						</p>
+						<form action="https://echo.htmlacademy.ru/courses" class="contact__form form">
+							<label class="form__label">
+								<span class="contacts__form__span form__span">Фамилия Имя</span><input class="contacts__form-input form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+							<label class="form__label">
+								<span class="contacts__form__span form__span">Телефон</span><input class="contacts__form-input form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+							<label class="form__label">
+								<span class="contacts__form__span form__span">Укажите артикулы, которые вас интересуют</span>
+								<textarea class="contacts__text-area" name="text-client" cols="30" rows="1" placeholder="0398123,086452,98164"></textarea>
+							</label>
+							<label class="form__label form__label--checkbox">
+								<input class="contacts__form__input-checkbox form__input  form__input--checkbox" type="checkbox" checked requiered>
+								<span class="form__check"></span>
+								Даю согласие на обработку cвоих персональных данных
+							</label>
+							<button class="form__button" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+</main><footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="https://echo.htmlacademy.ru/courses" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {"page":{"error":"","pageName":"contacts","status":""}};</script><script src="scripts/main.js"></script></body></html>

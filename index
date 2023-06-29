@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My app</title>
+		<meta name="description" content="My project">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="visually-hidden">
+				Оптовый онлайн магазин EWYS
+			</h1>
+			<div class="header__section header__section--color" id="top">
+				<div class="header__container-top container">
+					<nav class="header__nav">
+						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
+						<ul class="header__nav-list">
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="/contacts">Контакты</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Прайс-лист</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Заказать образец</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__section">
+				<div class="header__container-bottom container">
+					<div class="header__navbar">
+						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
+						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
+							<span class="header__navbar-link-span">Каталог</span>
+						</a>
+						<label class="header__search-label">
+							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
+						</label>
+						<a class="header__navbar-link header__navbar-link--favorite" href="#">
+							<span></span>
+							<span class="header__navbar-link-span">Избранное</span>
+						</a>
+						<a class="header__navbar-link header__navbar-link--by" href="/cart">
+							<span class="header__navbar-link-span">Корзина</span>
+						</a>
+					</div>
+					
+				</div>
+			</body>
+		</body>
+	</body>
+</html></header>	<main class="page">
+		
+		<div class="swiper-container container">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-content swiper-content--one">
+							<div class="container">
+								<div class="swiper-content__text-wrapper swiper-content__text-wrapper--one">
+									<h2 class="swiper-content__title swiper-content__title--one">
+										Накопительная система cкидок*:
+									</h2>
+									<p class="swiper-content__subtitle swiper-content__subtitle--one">- При заказе от 100 000 ₽ -
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--one">3</span>
+										%</p>
+									<p class="swiper-content__subtitle swiper-content__subtitle--one">- При заказе от 250 000 ₽ -
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--one">4</span>
+										%</p>
+									<p class="swiper-content__subtitle swiper-content__subtitle--one">- При заказе от 500 000 ₽ -
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--one">5</span>
+										%</p>
+									<a href="#" class="swiper__content-link swiper__content-link--one">К покупкам</a>
+									<a href="#" class="swiper__content-link-note">*скидка предоставляется на следующие заказы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-content swiper-content--two">
+							<div class="container">
+								<div class="swiper-content__text-wrapper swiper-content__text-wrapper--two">
+									<h2 class="swiper-content__title swiper-content__title--two">
+										Нижнее<br>
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--two">белье</span>
+									</h2>
+									<p class="swiper-content__subtitle swiper-content__subtitle--two">по самым привлекательным ценам</p>
+									<a href="#" class="swiper__content-link swiper__content-link--two">К покупкам</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-content swiper-content--tree">
+							<div class="container">
+								<div class="swiper-content__text-wrapper swiper-content__text-wrapper--tree">
+									<h2 class="swiper-content__title swiper-content__title--tree">
+										<span class="swiper-content__subtitle-span--tree">Аксесуссуары</span><br>
+										Рюкзаки
+									</h2>
+									<a href="#" class="swiper__content-link swiper__content-link--two">К покупкам</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-content swiper-content--for">
+							<div class="container">
+								<div class="swiper-content__text-wrapper swiper-content__text-wrapper--for">
+									<h2 class="swiper-content__title swiper-content__title--for">
+										Бесплатная<br>
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--for">доставка</span><br>
+									</h2>
+									<p class="swiper-content__subtitle swiper-content__subtitle--for">на
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--for">2</span>
+										заказ от
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--for">10 000 ₽</span>
+									</p>
+									<p class="swiper-content__subtitle swiper-content__subtitle--for">на каждый заказ от
+										<span class="swiper-content__subtitle-span swiper-content__subtitle-span--for">10 000 ₽</span>
+									</p>
+									<a href="#" class="swiper__content-link swiper__content-link--for">К покупкам</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<section class="promo">
+				<h2 class="visually-hidden">
+					Ссылки на каталог с товарами онлайн магазина EWYS
+				</h2>
+				<div class="promo-container container">
+					<div class="promo__wrapper">
+						<div class="promo__left-container">
+							<a href="#" class="promo__link promo__link--hits">
+								<span class="promo__link-span">Хиты сезона</span>
+							</a>
+							<a href="#" class="promo__link promo__link--sale">
+								<span class="promo__link-span">Скидки и акции</span>
+							</a>
+						</div>
+						<div class="promo__right-container">
+							<a href="#" class="promo__link promo__link--print">
+								<span class="promo__link-span promo__link-span--right-block promo__link-span--right-block-color">Любой принт!</span>
+							</a>
+							<a href="#" class="promo__link promo__link--delivery">
+								<span class="promo__link-span promo__link-span--right-block">Удобная доставка</span>
+							</a>
+						</div>
+						<div class="promo__bottom-container">
+							<a href="#" class="promo__link promo__link--bottom promo__link--womans">
+								<span class="promo__link-span promo__link-span--bottom">Женская<br>одежда</span>
+							</a>
+							<a href="#" class="promo__link promo__link--bottom promo__link--mans">
+								<span class="promo__link-span promo__link-span--bottom">Мужская<br>одежда</span>
+							</a>
+							<a href="#" class="promo__link promo__link--bottom promo__link--hats">
+								<span class="promo__link-span promo__link-span--bottom">Головные<br>уборы</span>
+							</a>
+							<a href="#" class="promo__link promo__link--bottom promo__link--underwears">
+								<span class="promo__link-span promo__link-span--bottom">Нижнее<br>бельё</span>
+							</a>
+							<a href="#" class="promo__link promo__link--bottom promo__link--accessories">
+								<span class="promo__link-span promo__link-span--bottom">Аксессуары</span>
+							</a>
+							<a href="#" class="promo__link promo__link--bottom promo__link--jackets">
+								<span class="promo__link-span promo__link-span--bottom">Куртки</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sales">
+				<div class="card-containter container">
+					<h2 class="sales__card-header card-header">
+						Товары
+						<span class="card-span">со скидкой</span>!
+					</h2>
+					<div class="card-wrapper">
+						<div class="card-item">
+							<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Панама женская и мужская летняя весенняя</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 03982</span>
+								<div class="card__price-wrapper">
+									<span class="card-price-old">2287 ₽</span>
+									<span class="card-price">474 ₽</span>
+								</div>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+							</li>
+							<li class="card-buttons-item">
+								<label class="card-buttons-label">
+									<span class="card-button-note card__quick-wiev">В корзину</span>
+									<button type="button" class="card-button card-button--by"></button>
+								</label>
+							</li>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item">
+					<img src="./images/sales-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Бейсболка женская, кепка мужская демисезон</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: 140157564</span>
+						<div class="card__price-wrapper">
+							<span class="card-price-old">2287 ₽</span>
+							<span class="card-price">1287 ₽</span>
+						</div>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item card-item--mobile-hidden">
+					<img src="./images/sales-3.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Нижнее белье женское комплект бесшовный в рубчик.</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: 144957662</span>
+						<div class="card__price-wrapper">
+							<span class="card-price-old">2287 ₽</span>
+							<span class="card-price">495 ₽</span>
+						</div>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item card-item--mobile-hidden">
+					<img src="./images/sales-4.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Рюкзак женский мужской школьный детский черный.</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: 157295287</span>
+						<div class="card__price-wrapper">
+							<span class="card-price-old">2287 ₽</span>
+							<span class="card-price">960 ₽</span>
+						</div>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#" class="card-link">Все товары</a>
+		</div>
+	</section>
+	<section class="about">
+		<div class="about__container container">
+			<h2 class="about__header">С нами удобно
+				<span class="about__header-span">сотрудничать</span>!
+			</h2>
+			<div class="about__wrapper splide">
+				<div class="about__splide-wrapper splide__track">
+					<ul class="about__list splide__list">
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Акции</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">Бесплатная доставка на&nbsp;2&nbsp;заказ, при заказе от&nbsp;10&nbsp;000&nbsp;&#x20bd; и&nbsp;каждый заказ при заказе свыше 100&nbsp;000&nbsp;&#x20bd;
+							</p>
+						</li>
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Доставим</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">Возможность доставки товара на&nbsp;ФФ, по&nbsp;странам СНГ, по&nbsp;Москве, по&nbsp;РФ!</p>
+						</li>
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Упакуем</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">Возможность приобретения всех видов упаковки для товара. Маркировка и&nbsp;упаковка товара.</p>
+						</li>
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Гибкая система скидок</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">При заказе от&nbsp;100&nbsp;000&nbsp;&#x20bd; скидка на&nbsp;следующие заказы 3&nbsp;%; 250&nbsp;000&nbsp;₽&nbsp;&mdash; 4&nbsp;%; 500&nbsp;000&nbsp;₽&nbsp;&mdash; 5&nbsp;%
+							</p>
+						</li>
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Проконсультируем</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">По&nbsp;телефону +7(965)16 32&nbsp;465 наши менеджеры проконсультируют по&nbsp;всем вопросам 7&nbsp;дней в&nbsp;неделю!</p>
+						</li>
+						<li class="about__list-item splide__slide">
+							<div class="about__header-wrapper">
+								<h3 class="about__title">Предоставим</h3>
+								<img class="about__image" src="./images/sprite.svg#arrow-green" alt="Стрелочка">
+							</div>
+							<p class="about__subtitle">Предоставим всю необходимую документацию на&nbsp;приобретенный товар</p>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="novelty">
+		<div class="novelty-card-containter card-containter container">
+			<h2 class="novelty__card-header card-header">
+				Новинки
+			</h2>
+			<div class="card-wrapper">
+				<div class="card-item">
+					<img src="./images/underpants.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Трусы мужские, плавки, набор боксеров, 4 шт.</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: 72302360</span>
+						<span class="card-price">654 ₽</span>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item">
+					<img src="./images/t-shirt.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Футболка, плотность 210 гр/м2</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: MF2040/02/K</span>
+						<span class="card-price">280 ₽</span>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item card-item--mobile-hidden">
+					<img src="./images/hoodie.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Худи без начеса двунитка</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: MH2000/01</span>
+						<span class="card-price">680 ₽</span>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="card-item card-item--mobile-hidden">
+					<img src="./images/hoodie-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+					<span class="card__position-span">
+						<span class="card-grade">Качество подтверждено</span>
+					</span>
+					<h3 class="card-title">
+						<a href="/product" class="card__link">Худи с начесом оверсайз унисекс чёрный</a>
+					</h3>
+					<div class="card-note">
+						<span class="card-articul">Арт.: Н/Д</span>
+						<span class="card-price">930 ₽</span>
+					</div>
+					<ul class="card-buttons-list">
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В избранное</span>
+								<button type="button" class="card-button card-button--favorite"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+								<button type="button" class="card-button  card-button--view"></button>
+							</label>
+						</li>
+						<li class="card-buttons-item">
+							<label class="card-buttons-label">
+								<span class="card-button-note card__quick-wiev">В корзину</span>
+								<button type="button" class="card-button card-button--by"></button>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#" class="card-link">Все товары</a>
+		</div>
+	</section>
+	<section class="mentors">
+		<div class="mentor-container container">
+			<div class="mentors__wrapper">
+				<div class="mentors__wrapper-item">
+					<h2 class="mentors__title">
+						Наставничество
+					</h2>
+					<p class="mentor__text">Опыт торговли на Вайлдберис у нашей компании более 5 лет.</p>
+					<p class="mentor__text">Мы предоставляем обучение с гарантией выхода на стабильный доход от 200 000 ₽.</p>
+					<p class="mentor__text">Оставьте заявку на бесплатную консультацию прямо сейчас.</p>
+				</div>
+				<div class="mentors__wrapper-item-form">
+					<section class="mentors__form">
+						<form action="https://echo.htmlacademy.ru/courses" class="form">
+							<label class="form__label">
+								<span class="mentors-form__span form__span">Фамилия Имя</span><input class="mentors-form__input form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+							<label class="form__label">
+								<span class="mentors-form__span form__span">Телефон</span><input class="mentors-form__input form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+							<label class="form__label mentors-form__label--checkbox form__label--checkbox"><input class="form__input mentors-form__input--checkbox form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+								Даю согласие на обработку cвоих персональных данных</label>
+							<button class="mentors-form__button form__button" type="submit">Отправить</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info">
+		<div class="info__contrainer container">
+			<div class="info__wrapper">
+				<button class="info__button-text">
+					<span class="info__button-text-show-text">Показать все</span>
+					<span class="info__button-text-hide-text">Свернуть текст</span>
+				</button>
+				<h2 class="info__title">
+					Оптовый интернет-магазин
+					<span class="info-span">EWYS</span>
+				</h2>
+				<div class="info__wrapper-left">
+					<p class="info__text">
+						Многие из начинающих предпринимателей, решивших запустить бизнес, выбирают такое направление, как продажа одежды. Это вызвано тем, что люди на постоянной основе обновляют свой гардероб. Начиная реализовывать планы в реальность, будущие собственники магазинов стараются найти наиболее выгодный вариант купить одежду оптом высокого качества. Благо, на просторах рынка доступны тысячи поставщиков, и одним из них является наш оптовый интернет-магазин одежды EWYS.
+					</p>
+					<p class="info__text">
+						Широкий ассортимент по выгодной стоимости
+					</p>
+					<p class="info__text">
+						EWYS является оптовым интернет-магазином одежды и обуви, предлагающим купить продукцию, как мелким, так и крупным оптом. Каталог радует разнообразием моделей для детей, женщин и мужчин.
+					</p>
+					<ul class="info__list info__list--left">
+						<li class="info__list-item info__list-item--left">
+							<p class="info__text info__text--left">
+								Детская одежда. Дети быстро растут, и родителям приходится практически каждый год обновлять их гардероб. У нас вы можете купить детскую одежду высокого качества, оформив доставку в Москве и по всей России. В ассортименте представлены вещи для младенцев, дошкольников и школьников, подростков.
+							</p>
+						</li>
+						<li class="info__list-item info__list-item--left">
+							<p class="info__text info__text--left">
+								Одежда для женщин. Девушки и женщины хотят выглядеть стильно и привлекательно в любой ситуации, чтобы привлекать внимание и соответствовать последним веяниям современной моды. В оптовом магазине одежды есть всё для достижения обозначенной цели. Мы предлагаем строгие юбки, брюки и блузы для офисного образа, уютные джинсы и свитера, комфортные пижамы, яркие платья и прочую стильную одежду для женщин.
+							</p>
+						</li>
+						<li class="info__list-item info__list-item--left">
+							<p class="info__text info__text--left ">
+								Мужская одежда. Мужчины также обеспокоены собственной внешностью и желают хорошо выглядеть в любой обстановке. Для них мы подготовили деловые костюмы, лаконичные рубашки, качественные джинсы, свитера, вещи для дома и занятий спортом.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="info__wrapper-right">
+					<p class="info__text">
+						Кроме того, в магазине EWYS вы сможете купить верхнюю одежду, а также обувь и нижнее бельё.
+					</p>
+					<p class="info__text">
+						Преимущества обращения в EWYS
+					</p>
+					<ol class="info__list info__list--right">
+						<li class="info__list-item ">
+							<p class="info__text-right">
+								<span class="info__color-text">1.</span>
+								Стоимость. Купить одежду для детей, мужчин и женщин в интернет-магазине EWYS можно по максимально выгодному ценнику.
+							</p>
+						</li>
+						<li class="info__list-item">
+							<p class="info__text-right">
+								<span class="info__color-text">2.</span>
+								Качество. Вся одежда выполнена из качественных материалов, которые отлично выдерживают многократные стирки и не лишаются внешней привлекательности.
+							</p>
+						</li>
+						<li class="info__list-item">
+							<p class="info__text-right">
+								<span class="info__color-text">3.</span>
+								Наличие сертификатов. Мы работаем официально, ввиду чего готовы предоставить покупателям все необходимые документы: декларации, сертификаты, счёт-фактура, УПД, ГТД.
+							</p>
+						</li>
+						<li class="info__list-item">
+							<p class="info__text-right">
+								<span class="info__color-text">4.</span>
+								Доставка. Купить одежду оптом вы сможете с доставкой по Москве и всей России. Товар будет доставлен курьером, в точки выдачи либо в почтовое отделение.
+							</p>
+						</li>
+					</ol>
+					<p class="info__text">
+						Как оформить заказ?
+					</p>
+					<p class="info__text">
+						Купить одежду мелким и крупным оптом в EWYS не составит труда.
+					</p>
+					<ol class="info__list info__list--bottom">
+						<li class="info__list-item">
+							<p class="info__text">
+								<span class="info__color-text">1.</span>
+								Выберите подходящую продукцию, введите требуемое количество и отправьте заказ в "Корзину".
+							</p>
+						</li>
+						<li class="info__list-item">
+							<p class="info__text">
+								<span class="info__color-text">2.</span>
+								Произведите оплату при помощи одного из предложенных методов.
+							</p>
+						</li>
+						<li class="info__list-item">
+							<p class="info__text">
+								<span class="info__color-text">3.</span>
+								Предоставьте информацию о проведении платежа. Обработка заявок выполняется в оперативном режиме, а доставка занимает от двух дней
+							</p>
+						</li>
+						<p class="info__text">
+							Недорогая одежда оптом от интернет-магазина EWYS это гарантия стремительного продвижения собственного бизнеса. Работая с нами вы сможете купить одежду по выгодной цене, начать извлекать желаемый доход и получать тысячи положительных отзывов о довольных покупателей.
+						</p>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+</main><footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="https://echo.htmlacademy.ru/courses" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {"page":{"error":"","pageName":"index","status":""}};</script><script src="scripts/main.js"></script></body></html>

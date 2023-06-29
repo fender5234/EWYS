@@ -1,0 +1,36 @@
+	<div class="quickview">
+		<div class="quickview__container">
+			<div class="quickview__content">
+				<button class="quickview__button-close" type="button"></button>
+				<div class="quickview__image-wrapper">
+					<img src="" alt="фото товара" class="quickview__image">
+					<label class="card-buttons-label">
+						<span class="card-button-note">В избранное</span>
+						<button type="button" class="card-button card-button--favorite"></button>
+					</label>
+				</div>
+				<div class="quickview__description">
+					<h2 class="quickview__title">Панама женская летняя</h2>
+					<span class="quicwiev__articul card-articul">Арт.: 03982</span>
+					<p class="quickwiev__price card-price">474 ₽</p>
+					<div class="quickwiev__color-wrapper">
+						<p class="quickwiev__content-text">Цвет:</p>
+						<div class="quickwiev__swiper">
+							<div class="swiper-wrapper quickwiev__swiper" slides-per-view="3">
+								<div class="swiper-slide"><input type="radio">1</div>
+								<div class="swiper-slide"><input type="radio">2</div>
+								<div class="swiper-slide"><input type="radio">3</div>
+							</div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="quickwiev__size-wrapper">
+						<p class="quickwiev__content-text">Размер:</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>

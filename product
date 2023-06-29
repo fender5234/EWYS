@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My app</title>
+		<meta name="description" content="My project">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="visually-hidden">
+				Оптовый онлайн магазин EWYS
+			</h1>
+			<div class="header__section header__section--color" id="top">
+				<div class="header__container-top container">
+					<nav class="header__nav">
+						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
+						<ul class="header__nav-list">
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="/contacts">Контакты</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Прайс-лист</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Заказать образец</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__section">
+				<div class="header__container-bottom container">
+					<div class="header__navbar">
+						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
+						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
+							<span class="header__navbar-link-span">Каталог</span>
+						</a>
+						<label class="header__search-label">
+							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
+						</label>
+						<a class="header__navbar-link header__navbar-link--favorite" href="#">
+							<span></span>
+							<span class="header__navbar-link-span">Избранное</span>
+						</a>
+						<a class="header__navbar-link header__navbar-link--by" href="/cart">
+							<span class="header__navbar-link-span">Корзина</span>
+						</a>
+					</div>
+					
+				</div>
+			</body>
+		</body>
+	</body>
+</html></header>	<main class="page">
+		<section class="product">
+			<div class="product__container container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list__item">
+							<a href="/index" class="breadcrums-list__link">Главная</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link">Женская одежда</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link">Головные уборы</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link">Панамы</a>
+						</li>
+						<li class="breadcrumbs-list__item">
+							<a href="#" class="breadcrums-list__link breadcrums-list__link--current">Панама женская летняя</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product__wrapper">
+					<div class="product__image-container">
+						<section id="thumbnail-carousel" class="splide product__splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+							<div class="splide__track">
+								<ul class="splide__list product__image-splide-list">
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image1.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image2.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image3.webp" width="100" height="120" alt="">
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image4.webp" width="100" height="120" alt="">
+									</li>
+								</ul>
+							</div>
+							<div class="splide__arrows">
+								<button class="splide__arrow splide__arrow--prev product__arrow--prev"></button>
+								<button class="splide__arrow splide__arrow--next product__arrow--next"></button>
+							</div>
+						</section>
+						<section class="splide" id="main-carousel">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image1.webp" width="440" height="480" alt="">
+										<ul class="card-buttons-list product__card-button-list">
+											<li class="card-buttons-item">
+												<label class="card-buttons-label">
+													<span class="card-button-note card__quick-wiev">В избранное</span>
+													<button type="button" class="card-button card-button--favorite"></button>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image2.webp" width="440" height="480" alt="">
+										<ul class="card-buttons-list product__card-button-list">
+											<li class="card-buttons-item">
+												<label class="card-buttons-label">
+													<span class="card-button-note card__quick-wiev">В избранное</span>
+													<button type="button" class="card-button card-button--favorite"></button>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image3.webp" width="440" height="480" alt="">
+										<ul class="card-buttons-list product__card-button-list">
+											<li class="card-buttons-item">
+												<label class="card-buttons-label">
+													<span class="card-button-note card__quick-wiev">В избранное</span>
+													<button type="button" class="card-button card-button--favorite"></button>
+												</label>
+											</li>
+										</ul>
+									</li>
+									<li class="splide__slide">
+										<img class="product__splide-image" src="./images/product-image4.webp" width="440" height="480" alt="">
+										<ul class="card-buttons-list product__card-button-list">
+											<li class="card-buttons-item">
+												<label class="card-buttons-label">
+													<span class="card-button-note card__quick-wiev">В избранное</span>
+													<button type="button" class="card-button card-button--favorite"></button>
+												</label>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="product__setting">
+						<h2 class="product__title">
+							Панама женская летняя
+						</h2>
+						<p class="product__articul">
+							Арт.: 03982
+						</p>
+						<p class="product__price">
+							474 ₽
+						</p>
+						<div class="product__color">
+							<section class="splide color-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Цвет:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1"><input class="product__color-input product__color-input--1" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--2"><input class="product__color-input product__color-input--2" type="radio" name="product-color"></li>
+										<li class="splide__slide color-splide__item color-splide__item--3"><input class="product__color-input product__color-input--3" type="radio" name="product-color"></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="product__size">
+							<section class="splide size-splide">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev"></button>
+									<button class="splide__arrow splide__arrow--next"></button>
+								</div>
+								<div class="splide__track color-splide__track">
+									<span class="product__input-title">Размер:</span>
+									<ul class="splide__list color-splide__list">
+										<li class="splide__slide color-splide__item color-splide__item--1">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize1"><label class="product__size-label" for="productSize1">46-48</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--2">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize2"><label class="product__size-label" for="productSize2">48-50</label>
+										</li>
+										<li class="splide__slide color-splide__item color-splide__item--3">
+											<input class="product__size-input product__size-input--1" type="radio" name="product-size" id="productSize3"><label class="product__size-label" for="productSize3">50-52</label>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<ul class="product__advantages-list">
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Доставка по России и странам СНГ</span>
+							</li>
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Все виды упаковок для товаров</span>
+							</li>
+							<li class="product__advantages-list-item">
+								<span class="product__advantages-text">Сертифицированный товар</span>
+							</li>
+						</ul>
+						<div class="product__buttons">
+							<div class="product__scope">
+								<button class="product__scope-button" type="button"></button>
+								<span class="product__scope-quantity">10</span>
+								<button class="product__scope-button product__scope-button--plus" type="button"></button>
+							</div>
+							<button class="product__buttons-defer" type="button">В корзину</button>
+							<a href="#" class="product__buttons-link">Заказать образец</a>
+						</div>
+					</div>
+				</div>
+				<div class="product__tabs">
+					<input type="radio" name="tabs" id="tab-1" class="product__radio-input product__radio-input--1" checked>
+					<input type="radio" name="tabs" id="tab-2" class="product__radio-input product__radio-input--2">
+					<input type="radio" name="tabs" id="tab-3" class="product__radio-input product__radio-input--3">
+					<label for="tab-1" class="product__tabs-label product__tabs-label--1">Описание</label>
+					<label for="tab-2" class="product__tabs-label product__tabs-label--2">Детали</label>
+					<label for="tab-3" class="product__tabs-label product__tabs-label--3">Доставка</label>
+
+					<div class="product__tabs-text product__tabs-text--1">
+						<p>Панама - универсальное и идеальное решение для теплого времени года на весну, лето и осень. Панамки женские будут прекрасно смотреться со спортивными костюмами, шортами, платьями, комбинезонами и юбками. Панама мужская отлично впишется в гардероб вместе с куртками, худи, джинсами и футболками. Так же панамы подходят для детей, подростков, мальчиков и девочек.</p>
+						<p>В ассортименте цветов: панама черная. Панама бежевая. Панама белая. Панама хаки. Панама лиловая и панама розовая. Панама женская летняя выполнена из 100% хлопка, шляпа прекрасно сохраняет форму, но при этом дышит и отводит влагу.</p>
+						<p>Пляжная панама женская защитит от солнца, но при этом не будет нагреваться и создавать дискомфорт про ношении. Панама женская весенняя прекрасно впишется в антураж просыпающегося от зимы города и будет навеивать приход лета. Панама летняя украсит ваш гардероб и будет стильно смотреться днем и ночью. Панама женская осенняя будет чудно сочетаться с опавшими листьями, модными куртками и пальто. Так же в ассортименте представленная панама женская зимняя теплая. На панаму можно нанести свой принт, который подчеркнет индивидуальность и будет приковывать взгляды прохожих. Панама унисекс - это не выходящая из тренда вещь. Порадуйте себя, заказав панаму отличного качества!</p>
+					</div>
+					<div class="product__tabs-text product__tabs-text--2">
+						Панама любого цвета. 100% Хлопок. 100% качества!
+					</div>
+					<div class="product__tabs-text product__tabs-text--3">
+						Доставка в по РФ.
+					</div>
+				</div>
+				<div class="card-containter product__container-card container">
+					<h2 class="sales__card-header card-header">
+						Похожие товары
+					</h2>
+					<div class="card-wrapper">
+						<div class="card-item">
+							<img src="./images/sales-1.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Панама женская и мужская летняя весенняя</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 03982</span>
+								<div class="card__price-wrapper">
+									<span class="card-price-old">2287 ₽</span>
+									<span class="card-price">474 ₽</span>
+								</div>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item">
+							<img src="./images/sales-2.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Бейсболка женская, кепка мужская демисезон</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 140157564</span>
+								<div class="card__price-wrapper">
+									<span class="card-price-old">2287 ₽</span>
+									<span class="card-price">1287 ₽</span>
+								</div>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item card-item--mobile-hidden">
+							<img src="./images/sales-3.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Нижнее белье женское комплект бесшовный в рубчик.</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 144957662</span>
+								<div class="card__price-wrapper">
+									<span class="card-price-old">2287 ₽</span>
+									<span class="card-price">495 ₽</span>
+								</div>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="card-item card-item--mobile-hidden">
+							<img src="./images/sales-4.jpg" alt="Фото товара" class="card-image" width="270" height="350px">
+							<span class="card__position-span">
+								<span class="card-grade">Качество подтверждено</span>
+							</span>
+							<h3 class="card-title">
+								<a href="/product" class="card__link">Рюкзак женский мужской школьный детский черный</a>
+							</h3>
+							<div class="card-note">
+								<span class="card-articul">Арт.: 157295287</span>
+								<div class="card__price-wrapper">
+									<span class="card-price-old">2287 ₽</span>
+									<span class="card-price">960 ₽</span>
+								</div>
+							</div>
+							<ul class="card-buttons-list">
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В избранное</span>
+										<button type="button" class="card-button card-button--favorite"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">Быстрый просмотр</span>
+										<button type="button" class="card-button  card-button--view"></button>
+									</label>
+								</li>
+								<li class="card-buttons-item">
+									<label class="card-buttons-label">
+										<span class="card-button-note card__quick-wiev">В корзину</span>
+										<button type="button" class="card-button card-button--by"></button>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="card-link">Все товары</a>
+				</div>
+			</section>
+		</div>
+	</div>
+</section></main><footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="https://echo.htmlacademy.ru/courses" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {"page":{"error":"","pageName":"product","status":""}};</script><script src="scripts/main.js"></script></body></html>

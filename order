@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My app</title>
+		<meta name="description" content="My project">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="visually-hidden">
+				Оптовый онлайн магазин EWYS
+			</h1>
+			<div class="header__section header__section--color" id="top">
+				<div class="header__container-top container">
+					<nav class="header__nav">
+						<a class="header__nav-link" href="tel:+79651632465">+7 (965) 16 32 465</a>
+						<ul class="header__nav-list">
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="/contacts">Контакты</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Прайс-лист</a>
+							</li>
+							<li class="header__nav-list-item">
+								<a class="header__nav-link" href="#">Заказать образец</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__section">
+				<div class="header__container-bottom container">
+					<div class="header__navbar">
+						<a class="header__logo-link" href="/index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="header__logo logo"></a>
+						<a class="header__navbar-link header__navbar-link--catalog" href="/catalog">
+							<span class="header__navbar-link-span">Каталог</span>
+						</a>
+						<label class="header__search-label">
+							<input class="header__search-input" type="search" name="search" placeholder="Поиск">
+						</label>
+						<a class="header__navbar-link header__navbar-link--favorite" href="#">
+							<span></span>
+							<span class="header__navbar-link-span">Избранное</span>
+						</a>
+						<a class="header__navbar-link header__navbar-link--by" href="/cart">
+							<span class="header__navbar-link-span">Корзина</span>
+						</a>
+					</div>
+					
+				</div>
+			</body>
+		</body>
+	</body>
+</html></header>	<main class="page">
+		<section class="order">
+			<div class="order__container container">
+				<ul class="breadcrumbs-list">
+					<li class="breadcrumbs-list__item">
+						<a href="/index" class="breadcrums-list__link">Главная</a>
+					</li>
+					<li class="breadcrumbs-list__item">
+						<a href="/cart" class="breadcrums-list__link">Корзина</a>
+					</li>
+					<li class="breadcrumbs-list__item">
+						<a href="/order" class="breadcrums-list__link breadcrums-list__link--current">Оформление заказа</a>
+					</li>
+				</ul>
+				<h2 class="order__title">
+					Оформление заказа
+				</h2>
+				<form action="https://echo.htmlacademy.ru/courses" class="order__form">
+					<div class="order__inputs-container">
+						<div class="order__form-input-left-wrapper">
+							<label class="order__form-label">
+								Имя*
+								<input class="order__input" type="text" required placeholder="Иван" name="name">
+							</label>
+							<label class="order__form-label">
+								Электроннная почта*
+								<input class="order__input" type="email" required placeholder="ivanov@mail.ru" name="email">
+							</label>
+							<label class="order__form-label">
+								Область/Район*
+								<input class="order__input" type="text" required placeholder="Московская область" name="region">
+							</label>
+							<label class="order__form-label">
+								Адрес*
+								<input class="order__input" type="text" required placeholder="ул.Ленина д.284 стр.1" name="adress">
+							</label>
+						</div>
+						<div class="order__form-input-right-wrapper">
+							<label class="order__form-label">
+								Фамилия*
+								<input class="order__input" type="text" required placeholder="Иванов" name="surname">
+							</label>
+							<label class="order__form-label">
+								Телефон*
+								<input class="order__input" type="text" required placeholder="+7(999) 999 99 99" name="phone">
+							</label>
+							<label class="order__form-label">
+								Населенный пункт*
+								<input class="order__input" type="text" required placeholder="г.Москва" name="city">
+							</label>
+						</div>
+					</div>
+					<div class="order__sumbit-wrapper">
+						<p class="order__submit-title">Заказ</p>
+						<div class="order__product-wrapper">
+							<a href="#" class="order__product-link">Панама женская и мужская летняя весенняя
+								<span class="order__price">474₽</span>
+								<span class="order__mark">X</span>
+								<span class="order__scope">10</span>
+							</a>
+							<p class="order__props">
+								<span class="order__props-span">
+									Цвет:
+									<span class="order__props-span-item">Черный</span>
+								</span>
+								<span class="order__props-span">
+									Размер:
+									<span class="order__props-span-item">50-52</span>
+								</span>
+							</p>
+							<span class="order__product-price">4740₽</span>
+						</div>
+						<div class="order__product-wrapper">
+							<a href="#" class="order__product-link">Панама женская и мужская летняя весенняя
+								<span class="order__price">474₽</span>
+								<span class="order__mark">X</span>
+								<span class="order__scope">10</span>
+							</a>
+							<p class="order__props">
+								<span class="order__props-span">
+									Цвет:
+									<span class="order__props-span-item">Розовый</span>
+								</span>
+								<span class="order__props-span">
+									Размер:
+									<span class="order__props-span-item">48-50</span>
+								</span>
+							</p>
+							<span class="order__product-price">4740₽</span>
+						</div>
+						<div class="order__all-price">
+							<span class="order__all-price-span">Итого</span>
+							<span class="order__all-price-span-score">15060₽</span>
+						</div>
+						<a href="#" class="order__privacy-link">Нажимая на кнопку, вы даете согласие на обработку cвоих персональных данных и согласны политикой конфиденциальности.</a>
+						<button type="submit" class="order__submit-button">Заказать</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+<footer class="footer">
+<div class="footer__container container">
+	<div class="footer__left-part">
+		<div class="footer__wrapper">
+			<a class="footer__logo-link" href="index"><img src="./images/logo-white.svg" width="145" height="51" alt="Логотип оптового интернет-магазина EWYS" class="footer__logo logo"></a>
+			<ul class="footer__social-list">
+				<li class="footer__social-list-item">
+					<a href="tel:+79651632465" class="footer__social-link footer__social-link--tel">+7 (965) 163 24 65</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="+79651632465" class="footer__social-link footer__social-link--whatsApp">WhatsApp</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="https://t.me/ewys__manager" class="footer__social-link footer__social-link--telegram">Telegram</a>
+				</li>
+				<li class="footer__social-list-item">
+					<a href="mailto:ewys__opt@mail.ru" class="footer__social-link footer__social-link--email">Email</a>
+				</li>
+			</ul>
+			<p class="copyright">2022-2023 © EWYS.ru</p>
+		</div>
+		<div class="footer__info">
+			<h2 class="footer__info-title">Информация</h2>
+			<ul class="footer__info-list">
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Каталог</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Прайс-лист</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Контакты</a>
+				</li>
+				<li class="footer__info-list-item">
+					<a href="#" class="footer__info-link">Обучение ВБ</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__right-part">
+		<section class="footer__section-form form">
+			<form action="https://echo.htmlacademy.ru/courses" class="footer__form form">
+				<h2 class="form__title">Обратная связь</h2>
+				<label class="form__label">
+					<span class="form__span">Фамилия Имя</span><input class="form__input" type="text" name="name" placeholder="Иван Иванов"></label>
+				<label class="form__label">
+					<span class="form__span">Телефон</span><input class="form__input" type="tel" name="phone" placeholder="+7 (000) 00-00-000"></label>
+				<label class="form__label form__label--checkbox"><input class="form__input form__input--checkbox" type="checkbox" checked requiered><span class="form__check"></span>
+					Даю согласие на обработку cвоих персональных данных</label>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+			<a href="#top" class="footer__anchor"></a>
+		</section>
+	</div>
+</div></footer><script>
+window.appData = {"page":{"error":"","pageName":"order","status":""}};</script><script src="scripts/main.js"></script></body></html>
