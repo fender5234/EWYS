@@ -6,4 +6,8 @@
 	@include tablet {
 		min-height: auto;
 	}
+
+	@include mobile {
+		min-height: auto;
+	}
 }
