@@ -77,7 +77,7 @@
 				</div>
 				<div class="product__wrapper">
 					<div class="product__image-container">
-						<section id="thumbnail-carousel" class="splide product__splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+						<section id="thumbnail" class="splide product__splide-section" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
 							<div class="splide__track">
 								<ul class="splide__list product__image-splide-list">
 									<li class="splide__slide">
@@ -99,7 +99,7 @@
 								<button class="splide__arrow splide__arrow--next product__arrow--next"></button>
 							</div>
 						</section>
-						<section class="splide" id="main-carousel">
+						<section class="splide splide__image-product" id="main-carousel">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
