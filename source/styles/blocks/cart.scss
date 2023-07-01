@@ -4,7 +4,7 @@
 	line-height: 38px;
 	font-family: "Lato-Semibold", sans-serif;
 
-	@include tablet{
+	@include tablet {
 		margin: 0;
 		padding: 0 20px;
 	}
@@ -103,7 +103,7 @@
 	grid-template-columns: 770px 1fr;
 	grid-gap: 0 30px;
 
-	@include tablet{
+	@include tablet {
 		grid-template-columns: 1fr;
 		align-items: center;
 		padding: 20px;
@@ -217,7 +217,6 @@
 }
 
 .cart__card-containter {
-
 	@include tablet {
 		padding-bottom: 20px;
 	}
@@ -237,7 +236,6 @@
 }
 
 .cart__wrapper-right {
-
 	@include tablet {
 		margin: 30px auto 0;
 	}

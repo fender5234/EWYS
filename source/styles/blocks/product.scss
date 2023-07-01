@@ -105,6 +105,10 @@
 	line-height: 38px;
 	font-family: "Lato-Semibold", sans-serif;
 	color: $color-gray;
+
+	@include mobile {
+		margin-top: 10px;
+	}
 }
 
 .product__articul {
@@ -189,6 +193,12 @@
 	line-height: 140%;
 	text-decoration: none;
 	color: $color-green;
+
+	@include mobile {
+		grid-row: 2/3;
+		grid-column: 1/-1;
+		text-align: center;
+	}
 }
 
 .product__advantages-list {
@@ -226,6 +236,10 @@
 
 .product__color {
 	margin-bottom: 15px;
+
+	@include mobile {
+		align-self: center;
+	}
 }
 
 .product__color-input {
@@ -319,12 +333,23 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 40px 0 0;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		padding: 20px 10px;
+	}
 }
 
 .product__image-container {
 	display: grid;
 	grid-template-columns: 100px 1fr;
 	grid-gap: 0 30px;
+}
+
+@media (max-width: 1440px) {
+	.product__image-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 .product__image-splide-list {
@@ -349,20 +374,40 @@
 
 .product__splide-image {
 	border-radius: 6px;
+
+	@include mobile {
+		width: 280px;
+		height: 305px;
+	}
 }
 
 .product__size {
 	margin-bottom: 25px;
+
+	@include mobile {
+		align-self: center;
+	}
 }
 
 .product__buttons {
 	display: flex;
+
+	@include mobile {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .product__card-button-list {
 	top: 21px;
 	right: auto;
 	left: 291px;
+
+	@include mobile {
+		top: 10px;
+		right: 10px;
+		left: auto;
+	}
 }
 
 .product-modal__image-wrapper {
@@ -389,4 +434,17 @@
 
 .product__size-modal {
 	margin-bottom: 142px;
+}
+
+@media (max-width: 1440px) {
+	.product__splide-section {
+		display: none;
+	}
+}
+
+.product__setting {
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+	}
 }
