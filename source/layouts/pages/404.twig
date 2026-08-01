@@ -1,0 +1,13 @@
+{% extends '../main.twig' %}
+{% block main %}
+	<main class="page">
+		<section class="container">
+			<h2>{{ status|default(404) }}</h2>
+			<p>Страница не найдена.</p>
+			{% if isDev and error %}
+				<pre>{{ error }}</pre>
+			{% endif %}
+			<a href="/">На главную</a>
+		</section>
+	</main>
+{% endblock %}

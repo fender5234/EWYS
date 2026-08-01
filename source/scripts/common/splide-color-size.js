@@ -8,7 +8,7 @@ const splideProductInputInit = () => {
 	const splideColorInput = new Splide(splideColor, {
 		arrows: true,
 		breakpoints: {
-			768: { width: '230px' },
+			768: { width: '230px' }
 		},
 		fixedHeight: '40px',
 		fixedWidth: '70px',
@@ -16,14 +16,14 @@ const splideProductInputInit = () => {
 		pagination: false,
 		perPage: 3,
 		type: 'loop',
-		width: '270px',
+		width: '270px'
 	});
 	splideColorInput.mount();
 	const splideSize = document.querySelector('.size-splide');
 	const splideSizeInput = new Splide(splideSize, {
 		arrows: true,
 		breakpoints: {
-			768: { width: '230px' },
+			768: { width: '230px' }
 		},
 		fixedHeight: '40px',
 		fixedWidth: '70px',

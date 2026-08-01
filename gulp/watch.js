@@ -27,12 +27,12 @@ const watch = () => {
 			if (STATIC_FILES.some((ext) => url.includes(`.${ext}`)) && !url.includes('/api/')) {
 				return next();
 			}
-			const { code, error } = await renderPage(`${url.slice(1) || 'index.html'}.twig`);
+			const { code, error } = await renderPage(`${url.slice(1) || 'index'}.twig`);
 			if (error) {
 				const status = StatusCode[error.includes('Unable to find') ? 'NOT_FOUND' : 'ERROR'];
 				res.writeHead(status);
 				try {
-					const { code: errorPageCode } = await renderPage('404.html.twig', { error: error.replace(/\[\d+?m/g, ''), status });
+					const { code: errorPageCode } = await renderPage('404.twig', { error: error.replace(/\[\d+?m/g, ''), status });
 					return res.end(errorPageCode);
 				} catch (secondaryError) {
 					return res.end(error);

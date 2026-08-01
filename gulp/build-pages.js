@@ -12,7 +12,7 @@ const buildPages = () =>
 			through2(async (content, file) => {
 				const { code } = await renderPage(path.relative(`${process.cwd()}/source/layouts/pages`, file.path).replace(/\\+/g, '/'));
 
-				file.extname = '';
+				file.extname = '.html';
 				return code;
 			})
 		)
